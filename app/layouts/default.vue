@@ -1,43 +1,78 @@
 <template>
-  <div class="min-h-screen flex flex-col bg-stone-50 text-stone-900">
-    <header class="sticky top-0 z-50 bg-amber-900 text-amber-50">
+  <div class="min-h-screen flex flex-col bg-[#F7EBD5] text-stone-900">
+    <header class="sticky top-0 z-50 bg-[#F7EBD5] text-amber-50">
       <div class="flex items-center justify-between px-4 py-3">
         <NuxtLink to="/" class="text-lg font-bold tracking-wide">
-          Beer Crown 2026
+          <img src="/logo-company.png" alt="Beer Crown 2026 logo">
         </NuxtLink>
+
         <button @click="menuOpen = true" class="md:hidden flex flex-col gap-1" aria-label="Open menu">
-          <span class="block w-6 h-0.5 bg-amber-50"></span>
-          <span class="block w-6 h-0.5 bg-amber-50"></span>
-          <span class="block w-6 h-0.5 bg-amber-50"></span>
+          <span class="block w-6 h-1 bg-[#000]"></span>
+          <span class="block w-6 h-1 bg-[#000]"></span>
+          <span class="block w-6 h-1 bg-[#000]"></span>
         </button>
-        <nav class="hidden md:flex gap-6 text-sm font-medium">
-          <NuxtLink to="/" class="hover:text-amber-300">Home</NuxtLink>
-          <NuxtLink to="/brewerise" class="hover:text-amber-300">Breweries</NuxtLink>
-          <NuxtLink to="/schedule" class="hover:text-amber-300">Schedule</NuxtLink>
-          <NuxtLink to="/beer-style" class="hover:text-amber-300">Beer styles</NuxtLink>
-          <NuxtLink to="/award" class="hover:text-amber-300">Awards</NuxtLink>
-          <NuxtLink to="/sponsor" class="hover:text-amber-300">Sponsors</NuxtLink>
+
+        <nav class="hidden md:flex gap-6 text-[#036533] text-sm font-medium">
+          <NuxtLink
+            to="/"
+            exact-active-class=" underline underline-offset-4"
+            class="hover:text-amber-300 transition-colors"
+          >Home</NuxtLink>
+
+          <NuxtLink
+            to="/brewerise"
+            active-class=" underline underline-offset-4"
+            class="hover:text-amber-300 transition-colors"
+          >Breweries</NuxtLink>
+
+          <NuxtLink
+            to="/schedule"
+            active-class=" underline underline-offset-4"
+            class="hover:text-amber-300 transition-colors"
+          >Schedule</NuxtLink>
+
+          <NuxtLink
+            to="/beer-style"
+            active-class="text-black underline underline-offset-4"
+            class="hover:text-amber-300 transition-colors"
+          >Beer styles</NuxtLink>
+
+          <NuxtLink
+            to="/award"
+            active-class=" underline underline-offset-4"
+            class="hover:text-amber-300 transition-colors"
+          >Awards</NuxtLink>
+
+          <NuxtLink
+            to="/sponsor"
+            active-class=" underline underline-offset-4"
+            class="hover:text-amber-300 transition-colors"
+          >Sponsors</NuxtLink>
         </nav>
       </div>
     </header>
 
-    <!-- Mobile drawer -->
-    <div
-      v-if="menuOpen"
-      class="md:hidden fixed inset-0 z-[60] bg-stone-900/40 flex justify-center items-start pt-10 px-4"
-      @click.self="menuOpen = false"
-    >
-      <div class="bg-white rounded-2xl w-full max-w-sm overflow-hidden shadow-xl">
+    <!-- Mobile backdrop -->
+    <Transition name="fade">
+      <div
+        v-if="menuOpen"
+        class="md:hidden fixed inset-0 z-[60] bg-stone-900/40"
+        @click="menuOpen = false"
+      ></div>
+    </Transition>
 
+    <!-- Mobile sidebar -->
+    <Transition name="slide">
+      <aside
+        v-if="menuOpen"
+        class="md:hidden fixed inset-y-0 left-0 z-[70] w-80 max-w-[85%] bg-white shadow-xl overflow-y-auto"
+      >
         <!-- Drawer header -->
-        <div class="flex items-center justify-between px-5 py-4 border-b border-stone-100">
-          <button @click="menuOpen = false" aria-label="Toggle menu" class="text-amber-700">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round"/>
-            </svg>
-          </button>
-          <span class="font-semibold text-sm">Beer Crown 2026</span>
-          <button @click="menuOpen = false" aria-label="Close menu" class="text-amber-700">
+        <div class="flex items-center justify-between px-2 py-4 border-b border-stone-100">
+          <span class="font-semibold text-sm">
+            <img src="/logo-company.png" alt="">
+          </span>
+          <button @click="menuOpen = false" aria-label="Close menu" class="text-amber-500 px-2">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/>
             </svg>
@@ -45,13 +80,43 @@
         </div>
 
         <!-- Nav links -->
-        <nav class="flex flex-col items-center gap-5 py-6 text-sm font-medium">
-          <NuxtLink to="/" @click="menuOpen=false" class="text-amber-600">Home</NuxtLink>
-          <NuxtLink to="/award" @click="menuOpen=false" class="hover:text-amber-600">Award</NuxtLink>
-          <NuxtLink to="/schedule" @click="menuOpen=false" class="hover:text-amber-600">Schedule</NuxtLink>
-          <NuxtLink to="/sponsor" @click="menuOpen=false" class="hover:text-amber-600">Sponsors</NuxtLink>
-          <NuxtLink to="/participants" @click="menuOpen=false" class="hover:text-amber-600">Breweries</NuxtLink>
-          <NuxtLink to="/information" @click="menuOpen=false" class="hover:text-amber-600">Information</NuxtLink>
+        <nav class="flex flex-col gap-5 px-5 py-6 text-sm text-[#036533] font-medium">
+          <NuxtLink
+            to="/"
+            exact-active-class="text-amber-600 underline underline-offset-4"
+            @click="menuOpen = false"
+            class="hover:text-amber-600"
+          >Home</NuxtLink>
+          <NuxtLink
+            to="/award"
+            active-class="text-amber-600 underline underline-offset-4"
+            @click="menuOpen = false"
+            class="hover:text-amber-600"
+          >Award</NuxtLink>
+          <NuxtLink
+            to="/schedule"
+            active-class="text-amber-600 underline underline-offset-4"
+            @click="menuOpen = false"
+            class="hover:text-amber-600"
+          >Schedule</NuxtLink>
+          <NuxtLink
+            to="/sponsor"
+            active-class="text-amber-600 underline underline-offset-4"
+            @click="menuOpen = false"
+            class="hover:text-amber-600"
+          >Sponsors</NuxtLink>
+          <NuxtLink
+            to="/brewerise"
+            active-class="text-amber-600 underline underline-offset-4"
+            @click="menuOpen = false"
+            class="hover:text-amber-600"
+          >Breweries</NuxtLink>
+          <NuxtLink
+            to="/beer-style"
+            active-class="text-amber-600 underline underline-offset-4"
+            @click="menuOpen = false"
+            class="hover:text-amber-600"
+          >Beer Style</NuxtLink>
         </nav>
 
         <!-- Vote button -->
@@ -64,15 +129,13 @@
         <!-- Social -->
         <p class="text-center text-xs text-stone-500 mb-3">Our social</p>
         <div class="flex justify-center gap-3 mb-5">
-          <a href="#" aria-label="Facebook" class="w-8 h-8 rounded-full bg-stone-900 text-white flex items-center justify-center text-xs font-bold">f</a>
-          <a href="#" aria-label="Pinterest" class="w-8 h-8 rounded-full bg-stone-900 text-white flex items-center justify-center text-xs font-bold">p</a>
-          <a href="#" aria-label="Telegram" class="w-8 h-8 rounded-full bg-stone-900 text-white flex items-center justify-center">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M21.5 4.5L2.5 12l6 2 2 6 3-4 5 4 3-19.5z"/></svg>
-          </a>
+          <a href="" aria-label="Facebook" class="w-8 h-8 rounded-full bg-stone-900 text-white flex items-center justify-center text-xs font-bold"><i class="fa-brands fa-facebook"></i></a>
+          <a href="" aria-label="Instagram" class="w-8 h-8 rounded-full bg-stone-900 text-white flex items-center justify-center"><i class="fa-brands fa-instagram"></i></a>
+          <a href="" aria-label="Telegram" class="w-8 h-8 rounded-full bg-stone-900 text-white flex items-center justify-center"><i class="fa-brands fa-telegram"></i></a>
         </div>
 
         <!-- Search -->
-        <div class="px-5 pb-5">
+        <div class="px-5 pb-6">
           <div class="relative">
             <input type="text" placeholder="Search" class="w-full bg-stone-100 rounded-md px-4 py-2 text-sm placeholder-stone-400 focus:outline-none" />
             <svg class="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-stone-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -80,20 +143,35 @@
             </svg>
           </div>
         </div>
-
-      </div>
-    </div>
+      </aside>
+    </Transition>
 
     <main class="flex-1">
       <slot />
     </main>
-
-    <footer class="bg-stone-900 text-stone-300 text-sm text-center py-6">
-      © 2026 Cambodian Craft Beer Crown
-    </footer>
   </div>
 </template>
 
 <script setup>
 const menuOpen = ref(false)
 </script>
+
+<style scoped>
+.slide-enter-active,
+.slide-leave-active {
+  transition: transform 0.3s ease;
+}
+.slide-enter-from,
+.slide-leave-to {
+  transform: translateX(-100%);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>
