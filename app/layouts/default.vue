@@ -1,14 +1,15 @@
+
 <template>
-  <div class="min-h-screen flex flex-col bg-stone-50 text-stone-900">
-    <header class="sticky top-0 z-50 bg-amber-900 text-amber-50">
+  <div class="min-h-screen flex flex-col bg-[#F7EBD5]  text-stone-900">
+    <header class="sticky top-0 z-50 bg-[#F7EBD5] text-amber-50">
       <div class="flex items-center justify-between px-4 py-3">
         <NuxtLink to="/" class="text-lg font-bold tracking-wide">
-          Beer Crown 2026
+          <img src="/logo-company.png" alt="Beer Crown 2026 logo">
         </NuxtLink>
         <button @click="menuOpen = true" class="md:hidden flex flex-col gap-1" aria-label="Open menu">
-          <span class="block w-6 h-0.5 bg-amber-50"></span>
-          <span class="block w-6 h-0.5 bg-amber-50"></span>
-          <span class="block w-6 h-0.5 bg-amber-50"></span>
+          <span class="block w-6 h-1 bg-[#000] "></span>
+          <span class="block w-6 h-1 bg-[#000] "></span>
+          <span class="block w-6 h-1 bg-[#000] "></span>
         </button>
         <nav class="hidden md:flex gap-6 text-sm font-medium">
           <NuxtLink to="/" class="hover:text-amber-300">Home</NuxtLink>
@@ -51,7 +52,7 @@
           <NuxtLink to="/schedule" @click="menuOpen=false" class="hover:text-amber-600">Schedule</NuxtLink>
           <NuxtLink to="/sponsor" @click="menuOpen=false" class="hover:text-amber-600">Sponsors</NuxtLink>
           <NuxtLink to="/participants" @click="menuOpen=false" class="hover:text-amber-600">Breweries</NuxtLink>
-          <NuxtLink to="/information" @click="menuOpen=false" class="hover:text-amber-600">Information</NuxtLink>
+          <NuxtLink to="/beer-style" @click="menuOpen=false" class="hover:text-amber-600">Beer Style</NuxtLink>
         </nav>
 
         <!-- Vote button -->
@@ -87,13 +88,11 @@
     <main class="flex-1">
       <slot />
     </main>
-
-    <footer class="bg-stone-900 text-stone-300 text-sm text-center py-6">
-      © 2026 Cambodian Craft Beer Crown
-    </footer>
   </div>
 </template>
 
 <script setup>
 const menuOpen = ref(false)
-</script>
+</script>    <footer class="bg-stone-900 text-stone-300 text-sm text-center py-6">
+      © 2026 Cambodian Craft Beer Crown
+    </footer>
