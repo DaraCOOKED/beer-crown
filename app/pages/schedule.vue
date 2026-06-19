@@ -7,7 +7,7 @@
         Cambodia Craft Beer Crown 2026
       </p>
       <h1
-        class="text-3xl sm:text-4xl md:text-5xl text-[#354D24] font-bold tracking-tight uppercase"
+        class="text-3xl md:text-5xl text-[#354D24] font-bold  uppercase"
         style="font-family: 'Bebas Neue', sans-serif;">
         Event Schedule
       </h1>
