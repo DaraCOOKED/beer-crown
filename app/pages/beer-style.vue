@@ -25,7 +25,7 @@
           </p>
         </div>
         <div class="absolute -right-2 md:-right-4 top-1/2 -translate-y-1/2 pointer-events-none">
-          <img src="/Barrel1.png" alt="Barrel Theme" class="w-28 md:w-50 h-auto object-contain drop-shadow-sm">
+          <img src="/Barrel1.png" alt="Barrel Theme" class="w-50 md:w-50 h-auto object-contain drop-shadow-sm">
         </div>
       </div>
 
