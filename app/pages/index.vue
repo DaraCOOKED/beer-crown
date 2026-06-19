@@ -1,12 +1,7 @@
 <template>
   <section class="relative bg-[#F8EBD6] overflow-hidden px-6 pt-8 pb-6">
 
-    <!-- Angkor Wat background, faded, top-right -->
-    <img
-      src="/ankor.png"
-      alt=""
-      class="absolute -top-3 -right-2 h-95 w-80 object-contain opacity-50 pointer-events-none select-none"
-    />
+    <img src="/ankor.png" alt="" class="absolute -top-3 -right-2 h-95 w-80 object-contain opacity-50 pointer-events-none select-none"/>
 
 
     <div class="relative z-10 max-w-[230px]">
@@ -23,12 +18,11 @@
       </p>
     </div>
 
-    <!-- Beer glass + hops, overlapping the right side -->
+ 
     <div class="relative z-10 flex justify-end -mt-40 mb-1">
       <img src="/glass.png" alt="Beer glass" class="w-50 drop-shadow-sm" />
     </div>
 
-    <!-- Info card: date / time / location -->
     <div class="relative z-10 bg-[#F7EBD5] border border-[#000]/15 rounded-xl px-3 py-1">
 
       <div class="flex items-center gap-4 py-4 border-b border-[#2F4A2F]/25">
