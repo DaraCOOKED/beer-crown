@@ -52,7 +52,7 @@
           <NuxtLink to="/schedule" @click="menuOpen=false" class="hover:text-amber-600">Schedule</NuxtLink>
           <NuxtLink to="/sponsor" @click="menuOpen=false" class="hover:text-amber-600">Sponsors</NuxtLink>
           <NuxtLink to="/participants" @click="menuOpen=false" class="hover:text-amber-600">Breweries</NuxtLink>
-          <NuxtLink to="/information" @click="menuOpen=false" class="hover:text-amber-600">Information</NuxtLink>
+          <NuxtLink to="/beer-style" @click="menuOpen=false" class="hover:text-amber-600">Beer Style</NuxtLink>
         </nav>
 
         <!-- Vote button -->
@@ -88,13 +88,11 @@
     <main class="flex-1">
       <slot />
     </main>
-
-    <footer class="bg-stone-900 text-stone-300 text-sm text-center py-6">
-      © 2026 Cambodian Craft Beer Crown
-    </footer>
   </div>
 </template>
 
 <script setup>
 const menuOpen = ref(false)
-</script>
+</script>    <footer class="bg-stone-900 text-stone-300 text-sm text-center py-6">
+      © 2026 Cambodian Craft Beer Crown
+    </footer>
