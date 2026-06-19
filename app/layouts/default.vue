@@ -1,14 +1,15 @@
+
 <template>
-  <div class="min-h-screen flex flex-col bg-stone-50 text-stone-900">
-    <header class="sticky top-0 z-50 bg-amber-900 text-amber-50">
+  <div class="min-h-screen flex flex-col bg-[#F7EBD5]  text-stone-900">
+    <header class="sticky top-0 z-50 bg-[#F7EBD5] text-amber-50">
       <div class="flex items-center justify-between px-4 py-3">
         <NuxtLink to="/" class="text-lg font-bold tracking-wide">
-          Beer Crown 2026
+          <img src="/logo-company.png" alt="Beer Crown 2026 logo">
         </NuxtLink>
         <button @click="menuOpen = true" class="md:hidden flex flex-col gap-1" aria-label="Open menu">
-          <span class="block w-6 h-0.5 bg-amber-50"></span>
-          <span class="block w-6 h-0.5 bg-amber-50"></span>
-          <span class="block w-6 h-0.5 bg-amber-50"></span>
+          <span class="block w-6 h-1 bg-[#000] "></span>
+          <span class="block w-6 h-1 bg-[#000] "></span>
+          <span class="block w-6 h-1 bg-[#000] "></span>
         </button>
         <nav class="hidden md:flex gap-6 text-sm font-medium">
           <NuxtLink to="/" class="hover:text-amber-300">Home</NuxtLink>
