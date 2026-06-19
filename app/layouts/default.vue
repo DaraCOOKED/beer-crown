@@ -93,6 +93,4 @@
 
 <script setup>
 const menuOpen = ref(false)
-</script>    <footer class="bg-stone-900 text-stone-300 text-sm text-center py-6">
-      © 2026 Cambodian Craft Beer Crown
-    </footer>
+</script>    
