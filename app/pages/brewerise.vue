@@ -44,13 +44,6 @@
       facebook="https://www.facebook.com/thechuglab"
     />
     <ParticipantCard
-      name="Chug Lab"
-      description="Nano brewery in Phnom Penh, heavy metal-themed tap house in BKK3."
-      logo="/chuglab.webp"
-      facebook="https://facebook.com/alphagroup"
-    />
-
-    <ParticipantCard
       name="Brew Khnear"
       description="At Brew Khnear, (loosely translated as ‘Brew Together,’) our focus is on getting that work/life balance right.
                   With solid and creative beers made from the finest ingredients using traditional brewing techniques, we strive not to work too hard, but to make time for ourselves and those who are important to us.
