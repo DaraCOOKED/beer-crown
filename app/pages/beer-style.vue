@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-[#F5EEDC] min-h-screen">
+  <section class="bg-[#F7EBD5] min-h-screen">
     <div class="w-full max-w-md md:max-w-2xl lg:max-w-4xl mx-auto px-4 sm:px-6 md:px-8 py-8 md:py-12">
 
       <!-- Title -->
