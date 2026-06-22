@@ -15,44 +15,46 @@
       <nav class="hidden md:flex items-center gap-6 text-[#036533] text-sm font-medium">
         <NuxtLink
           to="/"
-          exact-active-class="underline underline-offset-4"
+          exact-active-class="text-amber-700 underline underline-offset-4"
           class="hover:text-amber-300 transition-colors"
         >Home</NuxtLink>
 
         <NuxtLink
           to="/brewerise"
-          active-class="underline underline-offset-4"
+          active-class="text-amber-700 underline underline-offset-4"
           class="hover:text-amber-300 transition-colors"
         >Breweries</NuxtLink>
 
         <NuxtLink
           to="/schedule"
-          active-class="underline underline-offset-4"
+          active-class="text-amber-700 underline underline-offset-4"
           class="hover:text-amber-300 transition-colors"
         >Schedule</NuxtLink>
 
         <NuxtLink
           to="/beer-style"
-          active-class="text-black underline underline-offset-4"
+          active-class="text-amber-700 underline underline-offset-4"
           class="hover:text-amber-300 transition-colors"
         >Beer styles</NuxtLink>
 
         <NuxtLink
           to="/award"
-          active-class="underline underline-offset-4"
+          active-class="text-amber-700 underline underline-offset-4"
           class="hover:text-amber-300 transition-colors"
         >Awards</NuxtLink>
 
         <NuxtLink
           to="/sponsor"
-          active-class="underline underline-offset-4"
+          active-class="text-amber-700 underline underline-offset-4"
           class="hover:text-amber-300 transition-colors"
         >Sponsors</NuxtLink>
 
         <NuxtLink
-          to="/vote"
-          class="ml-2 px-4 py-1.5 rounded-full bg-[#036533] border border-[#036533] text-white hover:text-amber-300 hover:border-amber-300 transition-colors"
-        >Vote here</NuxtLink>
+  to="https://docs.google.com/forms/d/e/1FAIpQLScEjueBWitDWygOZkaHDnkADWIHhYdgZ-lH_u3EvKM2RzL1AA/viewform"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="ml-2 px-4 py-1.5 rounded-full bg-[#036533] border border-[#036533] text-white hover:text-amber-300 hover:border-amber-300 transition-colors"
+>Vote here</NuxtLink>
       </nav>
     </div>
   </header>
@@ -126,7 +128,7 @@
 
         <!-- Vote button -->
         <div class="flex justify-center pb-5">
-          <button class="px-8 py-2 rounded-full bg-amber-200 text-stone-800 text-sm font-medium hover:bg-amber-300">
+          <button class="px-8 py-2 rounded-full bg-[#036533] text-white text-sm font-medium hover:bg-amber-300">
             Vote here
           </button>
         </div>
