@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-[#f5eedf] px-4 py-12">
+  <div class="min-h-screen bg-[#F8EBD6] px-4 py-12">
 
     <SectionHeader>Participants</SectionHeader>
 
