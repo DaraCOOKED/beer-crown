@@ -1,5 +1,7 @@
 <template>
   <!-- Modal with fade + scale transition -->
+<!-- Modal with fade + scale transition -->
+<Teleport to="body">
   <Transition name="modal">
     <div
       v-if="showModal"
@@ -14,14 +16,14 @@
           <h3 class="text-lg font-bold uppercase text-[#354D24] tracking-wide mb-3">{{ name }}</h3>
           <p class="text-sm text-gray-600 leading-relaxed">{{ description }}</p>
           
-          <a  :href="facebook"
+          <a :href="facebook"
             target="_blank"
             class="mt-4 inline-flex items-center gap-1.5 text-sm text-[#354D24] font-semibold hover:underline"
           >
             <i class="fa-brands fa-facebook"></i> Facebook
           </a>
           <button
-           class="mt-4 px-6 py-2 rounded-full bg-[#354D24] text-white text-xs font-semibold hover:bg-[#2a3d1c]"
+            class="mt-4 px-6 py-2 rounded-full bg-[#354D24] text-white text-xs font-semibold hover:bg-[#2a3d1c]"
             @click="showModal = false"
           >
             Close
@@ -30,7 +32,7 @@
       </div>
     </div>
   </Transition>
-
+</Teleport>
   <!-- Card -->
   <div
     class="bg-white border border-[#354D24] rounded-2xl p-5 flex flex-col items-center text-center shadow-sm cursor-pointer transition-all duration-300 ease-out hover:shadow-[0_8px_24px_rgba(53,77,36,0.18)] hover:-translate-y-1"

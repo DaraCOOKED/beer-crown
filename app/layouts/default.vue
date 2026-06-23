@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen flex flex-col bg-[#F7EBD5] text-stone-900">
     <header class="sticky top-0 z-50 bg-[#F7EBD5] text-amber-50">
-    <div class="flex items-center justify-between  px-4 py-3">
+    <div class="flex items-center justify-between  px-4 py-1">
       <div class="flex justify-center align-center" >
         <NuxtLink to="/" class="text-lg font-bold ">
         <img src="/logo-company.png" class="h-17 w-20" alt="Beer Crown 2026 logo">
@@ -81,11 +81,11 @@
     class="md:hidden fixed inset-y-0 left-0 z-[70] w-80 max-w-[85%] bg-white shadow-xl overflow-y-auto flex flex-col"
   >
     <!-- Drawer header -->
-    <div class="flex items-center justify-between px-2 py-4 border-b border-stone-100">
+    <div class="flex items-center justify-between px-2  border-b border-stone-100">
       <span class="font-semibold text-sm">
         <div class="flex justify-center align-center">
           <NuxtLink to="/" class="text-lg font-bold">
-            <img src="/logo-company.png" class="h-25 w-28" alt="Beer Crown 2026 logo">
+            <img src="/logo-company.png" class="h-18.5 w-21" alt="Beer Crown 2026 logo">
           </NuxtLink>
         </div>
       </span>

@@ -177,7 +177,7 @@
                  transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-0"
           :class="rulesVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-6 scale-75'"
         >
-          <svg width="38" height="26" viewBox="0 0 40 28" fill="none" stroke="#2F4A2F" stroke-width="1.6" class="md:w-12 md:h-9">
+          <svg width="50" height="30" viewBox="0 0 40 28" fill="none" stroke="#2F4A2F" stroke-width="1.6" class="md:w-12 md:h-9">
             <path d="M1 14C7 4 33 4 39 14C33 24 7 24 1 14Z" stroke-linejoin="round"/>
             <circle cx="20" cy="14" r="5"/>
           </svg>
@@ -190,7 +190,7 @@
                  transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-150"
           :class="rulesVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-6 scale-75'"
         >
-          <svg width="32" height="32" viewBox="0 0 36 36" fill="none" stroke="#2F4A2F" stroke-width="1.6" class="md:w-11 md:h-11">
+          <svg width="50" height="32" viewBox="0 0 36 36" fill="none" stroke="#2F4A2F" stroke-width="1.6" class="md:w-11 md:h-11">
             <rect x="6" y="6" width="24" height="27" rx="2" stroke-linejoin="round"/>
             <path d="M13 6V4.5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2V6" stroke-linecap="round"/>
             <path d="M12 19l3.5 3.5L24 14" stroke-linecap="round" stroke-linejoin="round"/>
@@ -204,7 +204,7 @@
                  transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-300"
           :class="rulesVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-6 scale-75'"
         >
-          <svg width="38" height="30" viewBox="0 0 40 32" fill="none" stroke="#2F4A2F" stroke-width="1.6" class="md:w-12 md:h-10">
+          <svg width="50" height="30" viewBox="0 0 40 32" fill="none" stroke="#2F4A2F" stroke-width="1.6" class="md:w-12 md:h-10">
             <rect x="3" y="16" width="34" height="13" rx="1"/>
             <path d="M3 22h34M14 22v7M26 22v7" stroke-width="1"/>
             <path d="M16 16L29 4" stroke-linecap="round"/>

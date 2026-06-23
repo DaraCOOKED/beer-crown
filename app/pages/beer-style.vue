@@ -5,8 +5,9 @@
       <!-- Title -->
       <div class="text-center">
         <h1
-          class="font-title text-4xl md:text-[52px] text-[#3F5A38] leading-tight transition-all duration-700 ease-out"
-          :class="loaded ? 'opacity-100 translate-y-0 blur-none' : 'opacity-0 translate-y-4 blur-sm'"
+           class="text-[50px] md:text-[64px] lg:text-[76px] leading-[1.05] text-[#354D24] transition-all duration-700 ease-out"
+          :class="loaded ? 'opacity-100 translate-y-0 blur-0' : 'opacity-0 translate-y-6 blur-sm'"
+          style="font-family: 'Bebas Neue', sans-serif;"
         >
           BEER STYLE
         </h1>
@@ -33,10 +34,13 @@
         :class="loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'"
       >
         <div class="relative z-10">
-          <h2 class="text-[15px] md:text-[16px] font-bold text-[#3F5A38] leading-none tracking-tight">
+          <h2 class="text-[22px] md:text-[16px] text-[#3F5A38]  tracking-tight"
+          style="font-family: 'Bebas Neue', sans-serif;">
             2026 THEME
           </h2>
-          <p class="text-[#3F5A38] text-[14px] md:text-[15px] font-medium mt-1.5 leading-snug">
+          <p class="text-sm md:text-base text-stone-800 leading-relaxed md:max-w-sm
+                 transition-all duration-700 ease-out delay-300"
+          :class="loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'">
             Classic European Beer<br class="hidden sm:inline"> styles.
           </p>
         </div>
@@ -58,10 +62,13 @@
                transition-all duration-700 ease-out delay-300"
         :class="loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'"
       >
-        <h2 class="font-title text-xl md:text-2xl text-[#3F5A38] mb-3 md:mb-4">
+        <h2 class=" text-2xl md:text-2xl text-[#3F5A38] mb-3 md:mb-4"
+        style="font-family: 'Bebas Neue', sans-serif;">
           ABOUT THE COMPETITION
         </h2>
-        <p class="text-[#3F5A38] text-sm md:text-base leading-relaxed">
+        <p class="mt-2 text-sm md:text-base text-stone-800 leading-relaxed md:max-w-sm
+                 transition-all duration-700 ease-out delay-300"
+          :class="loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'">
           This competition is Part 1 of the annual Beer Crown Trilogy.
           Each year highlights a different brewing tradition and style.
           The 2026 edition celebrates Classic European Beer Styles.
@@ -74,7 +81,8 @@
                transition-all duration-700 ease-out delay-[400ms]"
         :class="loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'"
       >
-        <legend class="ml-4 md:ml-6 px-3 text-sm md:text-base font-bold text-[#3F5A38] tracking-wide bg-[#F5EEDC]">
+        <legend class="ml-4 md:ml-6 px-3 text-xl md:text-sm text-[#3F5A38] tracking-wide bg-[#F7EBD5] "
+        style="font-family: 'Bebas Neue', sans-serif;">
           ALLOWED STYLE
         </legend>
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5 mt-4">
