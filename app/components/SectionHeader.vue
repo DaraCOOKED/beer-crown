@@ -13,7 +13,7 @@
         <img
           src="/linelogo.png"
           alt="Logo"
-          class="w-7 h-6 sm:w-7 sm:h-7 md:w-15 md:h-15 object-contain transition-transform duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
+          class="w-7 h-6 sm:w-7 sm:h-7 md:w-9 md:h-9 object-contain transition-transform duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
         />
         <div class="h-px w-20 sm:w-40 md:w-56 bg-[#354D24] opacity-40"></div>
       </div>
