@@ -143,7 +143,7 @@
 
     <!-- Mobile-only Judge button -->
     <NuxtLink
-      to="/judge"
+      to="https://docs.google.com/forms/d/e/1FAIpQLScEjueBWitDWygOZkaHDnkADWIHhYdgZ-lH_u3EvKM2RzL1AA/viewform"
       class="md:hidden relative z-10 mt-6 flex items-center justify-center gap-3 bg-[#2F4A2F] text-[#EFE3C8] text-lg tracking-wide rounded-xl py-4
              transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-[450ms]"
       :class="loaded ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'"
