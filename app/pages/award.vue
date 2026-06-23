@@ -1,9 +1,9 @@
 <template>
-  <section class="bg-[#F8EBD6] min-h-screen py-16 px-4">
+  <section class="bg-[#F8EBD6] min-h-screen py-9.5 px-9">
     <div class="max-w-6xl mx-auto">
 
       <!-- Header Section: page-load cascade -->
-      <div class="text-center mb-16">
+      <div class="text-center mb-15">
         <h1
           class="text-4xl md:text-5xl font-black text-[#354E20] uppercase tracking-wider
                  transition-all duration-700 ease-out"

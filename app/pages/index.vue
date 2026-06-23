@@ -3,7 +3,7 @@
 
     <!-- Background parallax layer -->
     <div
-      class="absolute -top-3 -right-2 md:top-10 md:-right-10 pointer-events-none select-none
+      class="absolute -top-3 -right-3 md:top-10 md:-right-10 pointer-events-none select-none
              transition-all duration-1000 ease-out"
       :class="loaded ? 'opacity-50 md:opacity-30 scale-100' : 'opacity-0 scale-110'"
     >
@@ -63,7 +63,7 @@
       </div>
 
       <!-- Glass: 3 independent transform layers -->
-      <div class="relative z-10 flex justify-end -mt-40 mb-1 md:order-2 md:mt-0 md:mb-0 md:justify-center">
+      <div class="relative z-10 flex justify-end -right-7 -mt-40 mb-1 md:order-2 md:mt-0 md:mb-0 md:justify-center">
         <!-- Layer 1: entrance pop-in -->
         <div
           class="transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-150"
@@ -75,7 +75,7 @@
             <img
               src="/glass.png"
               alt="Beer glass"
-              class="w-50 md:w-90 lg:w-100 drop-shadow-sm will-change-transform"
+              class="w-50 md:w-85 lg:w-100 drop-shadow-sm will-change-transform"
               :style="{ transform: glassTransform }"
             />
           </div>
@@ -173,7 +173,7 @@
       <div class="grid grid-cols-3 md:gap-10">
 
         <div
-          class="flex flex-col items-center text-center px-2 border-r border-[#F1E8D4]/50 md:border-[#2F4A2F]/15
+          class="flex flex-col items-center text-center px-2 border-r border-[#2F4A2F]/50 md:border-[#2F4A2F]/15
                  transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-0"
           :class="rulesVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-6 scale-75'"
         >

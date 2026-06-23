@@ -1,7 +1,7 @@
 <template>
-  <div class="text-center mb-10">
+  <div class="text-center mt-12 mb-12">
     <h1
-      class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#354D24]"
+      class="text-4xl sm:text-5xl md:text-5xl  text-[#354D24]"
       style="font-family: 'Bebas Neue', sans-serif;"
     >
       <slot />

@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-[#F7EBD5] px-4 py-12">
+  <div class="min-h-screen bg-[#F7EBD5] px-4 ">
 
     <!-- Header: page-load fade-up -->
     <div

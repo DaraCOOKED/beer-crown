@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-[#F7EBD5]">
+  <div class="bg-[#F7EBD5] ">
 
     <!-- Header -->
-    <div class="max-w-3xl mx-auto px-4 pt-12 md:pt-20 lg:pt-24 pb-8 md:pb-14 text-center">
+    <div class="max-w-3xl mx-auto px-4 pt-12 md:pt-20 mb-3 lg:pt-24 pb-8 md:pb-14 text-center">
       <p
         class="text-xs md:text-sm font-semibold tracking-[0.25em] text-gray-500 uppercase mb-3
                transition-all duration-700 ease-out"
@@ -41,8 +41,8 @@
     </div>
 
     <!-- Sponsors -->
-    <div class="bg-[#F8EBD6] pb-10 md:pb-20 lg:pb-28">
-      <div class="max-w-[420px] md:max-w-3xl lg:max-w-6xl mx-auto px-4 md:px-8 lg:px-10 pt-10 md:pt-14 lg:pt-16">
+    <div class="bg-[#F8EBD6]">
+      <div class="max-w-[420px] md:max-w-3xl lg:max-w-6xl mx-auto px-4 md:px-8 lg:px-10 pt-10 md:pt-14 lg:pt-16 pb-2">
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-8">
           <div
@@ -61,11 +61,11 @@
           </div>
         </div>
 
-        <div class="mt-5 lg:mt-14 flex justify-center">
+        <div class="mt-10 -mx-4mb-4 lg-mb-9 lg:mt-15 flex justify-center">
           <NuxtLink
-             to="https://docs.google.com/forms/d/e/1FAIpQLScEjueBWitDWygOZkaHDnkADWIHhYdgZ-lH_u3EvKM2RzL1AA/viewform"
-  target="_blank"
-  rel="noopener noreferrer" 
+            to="https://docs.google.com/forms/d/e/1FAIpQLScEjueBWitDWygOZkaHDnkADWIHhYdgZ-lH_u3EvKM2RzL1AA/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
             class="relative z-10 flex items-center justify-center gap-2 bg-[#2F4A2F] text-[#EFE3C8] text-sm md:text-base tracking-wide rounded-lg py-2.5 px-4 md:py-3.5 md:px-10 lg:py-4 lg:px-16 w-full md:w-fit
                    hover:bg-[#243a24] transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-[450ms]"
             :class="loaded ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'"
@@ -80,15 +80,16 @@
 
       </div>
 
-      <!-- Decoration image: breathing-zoom parallax, clipped so it can never reveal a gap -->
+      <!-- Decoration image: now its own sibling, with a small, intentional bottom margin
+           instead of inheriting the section's large bottom padding -->
       <div
         ref="decorSection"
-        class="mt-8 md:mt-16 lg:mt-24 max-w-6xl mx-auto px-4 md:px-8 overflow-hidden md:rounded-3xl"
+        class="mt-8 md:mt-16   lg:mt-24 mb-1 md:mb-20 lg:mb-14 max-w-6xl mx-auto px-4 md:px-8 overflow-hidden md:rounded-3xl"
       >
         <img
           src="/image 25.png"
           alt="Decoration"
-          class="w-full h-auto will-change-transform"
+          class="w-full h-auto  will-change-transform"
           :style="{ transform: `scale(${decorScale})` }"
         >
       </div>
@@ -170,7 +171,6 @@ function onScroll() {
 }
 
 function tick() {
-  // sin curve: 1.0 at the edges, peaks ~1.05 when the image is centered in view
   const target = 1 + Math.sin(rawDecorProgress.value * Math.PI) * 0.05
   const diff = target - decorScale.value
   decorScale.value += diff * 0.08

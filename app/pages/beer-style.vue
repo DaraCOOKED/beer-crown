@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-[#F7EBD5] min-h-screen" ref="sectionRef">
+  <section class="bg-[#F7EBD5] min-h-screen overflow-x-hidden " ref="sectionRef">
     <div class="w-full max-w-md md:max-w-2xl lg:max-w-4xl mx-auto px-4 sm:px-6 md:px-8 py-8 md:py-12">
 
       <!-- Title -->
@@ -43,7 +43,7 @@
 
         <!-- Barrel: outer = scroll-driven drift + rotate (inline transform), inner = idle bob (CSS animation) -->
         <div
-          class="absolute -right-2 md:-right-4 top-1/2 pointer-events-none will-change-transform"
+          class="absolute -right-9 md:-right-5 top-1/2 pointer-events-none will-change-transform"
           :style="{ transform: `translateY(calc(-50% + ${barrelDrift}px)) rotate(${barrelRotate}deg)` }"
         >
           <div class="barrel-bob">
@@ -194,7 +194,7 @@
            scroll drift (inline transform), breathing zoom (inline transform,
            contained by overflow-hidden so it can never reveal a gap) -->
       <div
-        class="mt-8 -mx-4 md:mx-0 transition-all duration-700 ease-out"
+        class="mt-10 -mx-4 md:mx-0 transition-all duration-700 ease-out"
         :class="decorationVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'"
       >
         <div
@@ -210,9 +210,7 @@
               :style="{ transform: `scale(${decorationScale})` }"
             >
           </div>
-          <p class="text-center font-title text-lg md:text-xl text-[#3F5A38] mt-3 tracking-wide">
-            Celebrating Classic European Brewing Heritage
-          </p>
+    
         </div>
       </div>
 

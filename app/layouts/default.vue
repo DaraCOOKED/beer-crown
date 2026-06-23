@@ -138,9 +138,13 @@
 
     <!-- Vote button -->
     <div class="flex justify-center pb-6">
-      <button class="px-8 py-2 rounded-full bg-[#036533] text-white text-sm font-medium hover:bg-amber-300">
-        Vote here
-      </button>
+      <NuxtLink class="px-8 py-2 rounded-full bg-[#036533] text-white text-sm font-medium hover:bg-amber-300
+      "
+                 to="https://docs.google.com/forms/d/e/1FAIpQLScEjueBWitDWygOZkaHDnkADWIHhYdgZ-lH_u3EvKM2RzL1AA/viewform"
+ >
+        
+        Judge Here
+      </NuxtLink>
     </div>
 
     <!-- Event info strip -->
@@ -181,8 +185,8 @@
       <slot />
     </main>
   </div>
-    <footer class="bg-[#F7EBD4] border-t border-stone-200 py-4 px-4">
-    <p class="text-center text-xs sm:text-sm text-[#036533] font-medium tracking-wide">
+    <footer class="bg-[#F7EBD4] border-t  border-stone-400 py-4 px-4">
+    <p class="text-center text-xs sm:text-sm text-[#354D24] font-medium tracking-wide">
       © {{ year }} CBCC — Cambodia Craft Beer Crown • Event: 15–17 August 2026 • Angkor Wat, Siem Reap
     </p>
   </footer>

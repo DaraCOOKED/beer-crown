@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-[#F7EBD5]">
+  <div class="min-h-screen bg-[#F7EBD5] overflow-x-hidden">
 
     <!-- Header -->
     <div class="max-w-3xl mx-auto px-4 pt-12 pb-8 text-center">
@@ -19,7 +19,7 @@
         Event Schedule
       </h1>
       <div
-        class="flex items-center justify-center gap-4 mt-3 md:mt-5 transition-all duration-700 ease-out delay-300"
+        class="flex items-center justify-center gap-4 mt-3 mb-2 md:mt-5 transition-all duration-700 ease-out delay-300"
         :class="loaded ? 'opacity-100 scale-100' : 'opacity-0 scale-95'"
       >
         <div class="h-px w-20 sm:w-40 md:w-56 bg-[#354D24] opacity-40"></div>
@@ -180,17 +180,14 @@
     </div>
 
     <!-- Footer: factory image as a real parallax depth-layer -->
-    <footer
-      ref="footerSection"
-      class="relative mt-4 min-h-[140px] h-48 sm:h-64 lg:h-80 overflow-hidden"
-    >
-      <img
-        src="/factory.png"
-        alt=""
-        class="absolute left-0 -bottom-[15%] w-full h-[130%] object-contain object-bottom will-change-transform pointer-events-none select-none"
-        :style="{ transform: `translateY(${footerOffset}px)` }"
-      />
-    </footer>
+     <footer
+    class="relative mt-12 min-h-[140px] h-48 sm:h-64 lg:h-80 bg-bottom bg-no-repeat bg-contain"
+    style="background-image: url('/factory.png');"
+  >
+    <div class="absolute inset-0 flex items-end justify-center pb-3 sm:pb-4">
+ 
+    </div>
+  </footer>
 
   </div>
 </template>
