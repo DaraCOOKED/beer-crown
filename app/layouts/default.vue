@@ -2,12 +2,12 @@
   <div class="min-h-screen flex flex-col bg-[#F7EBD5] text-stone-900">
     <header class="sticky top-0 z-50 bg-[#F7EBD5] text-amber-50">
     <div class="flex items-center justify-between  px-4 py-1">
-      <div class="flex justify-center align-center" >
-        <NuxtLink to="/" class="text-lg font-bold ">
-        <img src="/logo-company.png" class="h-17 w-20" alt="Beer Crown 2026 logo">
+      <div class="flex justify-center item-center align-center" >
+        <NuxtLink to="/" class="text-lg justify-center font-bold ">
+        <img src="/company-logo.png" class="h-10 mt-1.5 w-13" alt="Beer Crown 2026 logo">
       </NuxtLink>
-      <NuxtLink to="/" class="text-lg font-bold flex justify-center tracking-wide">
-        <img src="/beer-asso.png" class="h-17 w-18 flex" alt="Beer Crown 2026 logo">
+      <NuxtLink to="/" class="text-lg justify-center font-bold flex justify-center tracking-wide">
+        <img src="/beer-asso.png" class="h-13.5 w-15 flex" alt="Beer Crown 2026 logo">
       </NuxtLink>
       </div>
       
@@ -85,7 +85,7 @@
       <span class="font-semibold text-sm">
         <div class="flex justify-center align-center">
           <NuxtLink to="/" class="text-lg font-bold">
-            <img src="/logo-company.png" class="h-18.5 w-21" alt="Beer Crown 2026 logo">
+            <img src="/company-logo.png" class="h-13 mb-2 mt-1 w-14 " alt="Beer Crown 2026 logo">
           </NuxtLink>
         </div>
       </span>
