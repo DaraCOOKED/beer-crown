@@ -34,150 +34,155 @@
     </div>
 
     <!-- Timeline -->
-    <div ref="timelineWrapper" class="max-w-2xl mx-auto px-4 sm:px-6 pb-0">
-      <div class="relative">
+   <!-- Timeline -->
+<div ref="timelineWrapper" class="max-w-2xl mx-auto px-4 sm:px-6 pb-0">
+  <div ref="lineContainerRef" class="relative flex flex-col gap-8 sm:gap-10">
 
-        <!-- Base track line -->
-        <div class="absolute left-7 sm:left-8 top-0 bottom-0 w-px bg-[#354D24] opacity-20"></div>
+    <!-- Base track line: height pinned to the exact center of the last icon -->
+    <div
+      class="absolute left-7 sm:left-8 top-0 w-px bg-[#354D24] opacity-20"
+      :style="{ height: `${lineHeight}px` }"
+    ></div>
 
-        <!-- Progress line: draws itself in as you scroll -->
-        <div
-          class="absolute left-7 sm:left-8 top-0 w-px bg-[#354D24] will-change-transform origin-top"
-          :style="{ height: '100%', transform: `scaleY(${lineProgress})` }"
-        ></div>
+    <!-- Progress line: draws itself in as you scroll, same exact pinned height -->
+    <div
+      class="absolute left-7 sm:left-8 top-0 w-px bg-[#354D24] will-change-transform origin-top"
+      :style="{ height: `${lineHeight}px`, transform: `scaleY(${lineProgress})` }"
+    ></div>
 
-        <!-- Opening Ceremony -->
-        <div ref="item0" class="relative flex gap-4 sm:gap-6 mb-8 sm:mb-10">
-          <div
-            class="shrink-0 transition-all duration-600 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
-            :class="visible[0] ? 'opacity-100 scale-100 rotate-0' : 'opacity-0 scale-50 -rotate-12'"
-          >
-            <div class="icon-pulse w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-[#354D24] bg-[#f5eedf] flex items-center justify-center z-10 shadow-sm">
-              <i class="fa-solid fa-flag text-xl sm:text-2xl text-[#354D24]"></i>
-            </div>
-          </div>
-          <div
-            class="flex-1 bg-white border border-gray-100 rounded-xl px-4 py-4 sm:px-5 shadow-sm
-                   transition-all duration-700 ease-out delay-150"
-            :class="visible[0] ? 'opacity-100 translate-x-0 blur-0' : 'opacity-0 translate-x-8 blur-sm'"
-          >
-            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
-              <span class="inline-flex items-center gap-1.5 bg-[#354D24] text-white text-xs sm:text-sm font-semibold px-3 py-1 rounded-full w-fit">
-                <i class="fa-solid fa-clock text-xs opacity-75"></i>
-                02:00 PM
-              </span>
-            </div>
-            <h3 class="mt-2.5 text-base sm:text-lg font-bold uppercase tracking-wide text-[#354D24]">Opening Ceremony</h3>
-            <p class="mt-1 text-sm text-gray-500 leading-relaxed">Welcome speech and opening performance to kick off the event.</p>
-          </div>
+    <!-- Opening Ceremony -->
+    <div ref="item0" class="relative flex items-center gap-4 sm:gap-6">
+      <div
+        class="shrink-0 transition-all duration-600 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
+        :class="visible[0] ? 'opacity-100 scale-100 rotate-0' : 'opacity-0 scale-50 -rotate-12'"
+      >
+        <div class="icon-pulse w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-[#354D24] bg-[#f5eedf] flex items-center justify-center z-10 shadow-sm">
+          <i class="fa-solid fa-flag text-xl sm:text-2xl text-[#354D24]"></i>
         </div>
-
-        <!-- Activities & Booths -->
-        <div ref="item1" class="relative flex gap-4 sm:gap-6 mb-8 sm:mb-10">
-          <div
-            class="shrink-0 transition-all duration-600 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
-            :class="visible[1] ? 'opacity-100 scale-100 rotate-0' : 'opacity-0 scale-50 -rotate-12'"
-          >
-            <div class="icon-pulse w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-[#354D24] bg-[#f5eedf] flex items-center justify-center z-10 shadow-sm">
-              <i class="fa-solid fa-users text-xl sm:text-2xl text-[#354D24]"></i>
-            </div>
-          </div>
-          <div
-            class="flex-1 bg-white border border-gray-100 rounded-xl px-4 py-4 sm:px-5 shadow-sm
-                   transition-all duration-700 ease-out delay-150"
-            :class="visible[1] ? 'opacity-100 translate-x-0 blur-0' : 'opacity-0 translate-x-8 blur-sm'"
-          >
-            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
-              <span class="inline-flex items-center gap-1.5 bg-[#354D24] text-white text-xs sm:text-sm font-semibold px-3 py-1 rounded-full w-fit">
-                <i class="fa-solid fa-clock text-xs opacity-75"></i>
-                04:00 PM
-              </span>
-            </div>
-            <h3 class="mt-2.5 text-base sm:text-lg font-bold uppercase tracking-wide text-[#354D24]">Activities & Booths</h3>
-            <p class="mt-1 text-sm text-gray-500 leading-relaxed">Explore activities and visit participant booths across the venue.</p>
-          </div>
+      </div>
+      <div
+        class="flex-1 bg-white border border-gray-100 rounded-xl px-4 py-4 sm:px-5 shadow-sm
+               transition-all duration-700 ease-out delay-150"
+        :class="visible[0] ? 'opacity-100 translate-x-0 blur-0' : 'opacity-0 translate-x-8 blur-sm'"
+      >
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+          <span class="inline-flex items-center gap-1.5 bg-[#354D24] text-white text-xs sm:text-sm font-semibold px-3 py-1 rounded-full w-fit">
+            <i class="fa-solid fa-clock text-xs opacity-75"></i>
+            02:00 PM
+          </span>
         </div>
-
-        <!-- Dinner Break -->
-        <div ref="item2" class="relative flex gap-4 sm:gap-6 mb-8 sm:mb-10">
-          <div
-            class="shrink-0 transition-all duration-600 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
-            :class="visible[2] ? 'opacity-100 scale-100 rotate-0' : 'opacity-0 scale-50 -rotate-12'"
-          >
-            <div class="icon-pulse w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-[#354D24] bg-[#f5eedf] flex items-center justify-center z-10 shadow-sm">
-              <i class="fa-solid fa-utensils text-xl sm:text-2xl text-[#354D24]"></i>
-            </div>
-          </div>
-          <div
-            class="flex-1 bg-white border border-gray-100 rounded-xl px-4 py-4 sm:px-5 shadow-sm
-                   transition-all duration-700 ease-out delay-150"
-            :class="visible[2] ? 'opacity-100 translate-x-0 blur-0' : 'opacity-0 translate-x-8 blur-sm'"
-          >
-            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
-              <span class="inline-flex items-center gap-1.5 bg-[#354D24] text-white text-xs sm:text-sm font-semibold px-3 py-1 rounded-full w-fit">
-                <i class="fa-solid fa-clock text-xs opacity-75"></i>
-                07:00 PM
-              </span>
-            </div>
-            <h3 class="mt-2.5 text-base sm:text-lg font-bold uppercase tracking-wide text-[#354D24]">Dinner Break</h3>
-            <p class="mt-1 text-sm text-gray-500 leading-relaxed">Enjoy delicious food, craft beers, and a chance to relax.</p>
-          </div>
-        </div>
-
-        <!-- Live Performance -->
-        <div ref="item3" class="relative flex gap-4 sm:gap-6 mb-8 sm:mb-10">
-          <div
-            class="shrink-0 transition-all duration-600 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
-            :class="visible[3] ? 'opacity-100 scale-100 rotate-0' : 'opacity-0 scale-50 -rotate-12'"
-          >
-            <div class="icon-pulse w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-[#354D24] bg-[#f5eedf] flex items-center justify-center z-10 shadow-sm">
-              <i class="fa-solid fa-music text-xl sm:text-2xl text-[#354D24]"></i>
-            </div>
-          </div>
-          <div
-            class="flex-1 bg-white border border-gray-100 rounded-xl px-4 py-4 sm:px-5 shadow-sm
-                   transition-all duration-700 ease-out delay-150"
-            :class="visible[3] ? 'opacity-100 translate-x-0 blur-0' : 'opacity-0 translate-x-8 blur-sm'"
-          >
-            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
-              <span class="inline-flex items-center gap-1.5 bg-[#354D24] text-white text-xs sm:text-sm font-semibold px-3 py-1 rounded-full w-fit">
-                <i class="fa-solid fa-clock text-xs opacity-75"></i>
-                09:00 PM
-              </span>
-            </div>
-            <h3 class="mt-2.5 text-base sm:text-lg font-bold uppercase tracking-wide text-[#354D24]">Live Performance</h3>
-            <p class="mt-1 text-sm text-gray-500 leading-relaxed">Live music and a special show for all attendees.</p>
-          </div>
-        </div>
-
-        <!-- Closing Ceremony -->
-        <div ref="item4" class="relative flex gap-4 sm:gap-6 mb-8 sm:mb-10">
-          <div
-            class="shrink-0 transition-all duration-600 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
-            :class="visible[4] ? 'opacity-100 scale-100 rotate-0' : 'opacity-0 scale-50 -rotate-12'"
-          >
-            <div class="icon-pulse w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-[#354D24] bg-[#f5eedf] flex items-center justify-center z-10 shadow-sm">
-              <i class="fa-solid fa-trophy text-xl sm:text-2xl text-[#354D24]"></i>
-            </div>
-          </div>
-          <div
-            class="flex-1 bg-white border border-gray-100 rounded-xl px-4 py-4 sm:px-5 shadow-sm
-                   transition-all duration-700 ease-out delay-150"
-            :class="visible[4] ? 'opacity-100 translate-x-0 blur-0' : 'opacity-0 translate-x-8 blur-sm'"
-          >
-            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
-              <span class="inline-flex items-center gap-1.5 bg-[#354D24] text-white text-xs sm:text-sm font-semibold px-3 py-1 rounded-full w-fit">
-                <i class="fa-solid fa-clock text-xs opacity-75"></i>
-                11:00 PM
-              </span>
-            </div>
-            <h3 class="mt-2.5 text-base sm:text-lg font-bold uppercase tracking-wide text-[#354D24]">Closing Ceremony</h3>
-            <p class="mt-1 text-sm text-gray-500 leading-relaxed">Awards presentation and closing remarks from the organizers.</p>
-          </div>
-        </div>
-
+        <h3 class="mt-2.5 text-base sm:text-lg font-bold uppercase tracking-wide text-[#354D24]">Opening Ceremony</h3>
+        <p class="mt-1 text-sm text-gray-500 leading-relaxed">Welcome speech and opening performance to kick off the event.</p>
       </div>
     </div>
+
+    <!-- Activities & Booths -->
+    <div ref="item1" class="relative flex items-center gap-4 sm:gap-6">
+      <div
+        class="shrink-0 transition-all duration-600 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
+        :class="visible[1] ? 'opacity-100 scale-100 rotate-0' : 'opacity-0 scale-50 -rotate-12'"
+      >
+        <div class="icon-pulse w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-[#354D24] bg-[#f5eedf] flex items-center justify-center z-10 shadow-sm">
+          <i class="fa-solid fa-users text-xl sm:text-2xl text-[#354D24]"></i>
+        </div>
+      </div>
+      <div
+        class="flex-1 bg-white border border-gray-100 rounded-xl px-4 py-4 sm:px-5 shadow-sm
+               transition-all duration-700 ease-out delay-150"
+        :class="visible[1] ? 'opacity-100 translate-x-0 blur-0' : 'opacity-0 translate-x-8 blur-sm'"
+      >
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+          <span class="inline-flex items-center gap-1.5 bg-[#354D24] text-white text-xs sm:text-sm font-semibold px-3 py-1 rounded-full w-fit">
+            <i class="fa-solid fa-clock text-xs opacity-75"></i>
+            04:00 PM
+          </span>
+        </div>
+        <h3 class="mt-2.5 text-base sm:text-lg font-bold uppercase tracking-wide text-[#354D24]">Activities & Booths</h3>
+        <p class="mt-1 text-sm text-gray-500 leading-relaxed">Explore activities and visit participant booths across the venue.</p>
+      </div>
+    </div>
+
+    <!-- Dinner Break -->
+    <div ref="item2" class="relative flex items-center gap-4 sm:gap-6">
+      <div
+        class="shrink-0 transition-all duration-600 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
+        :class="visible[2] ? 'opacity-100 scale-100 rotate-0' : 'opacity-0 scale-50 -rotate-12'"
+      >
+        <div class="icon-pulse w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-[#354D24] bg-[#f5eedf] flex items-center justify-center z-10 shadow-sm">
+          <i class="fa-solid fa-utensils text-xl sm:text-2xl text-[#354D24]"></i>
+        </div>
+      </div>
+      <div
+        class="flex-1 bg-white border border-gray-100 rounded-xl px-4 py-4 sm:px-5 shadow-sm
+               transition-all duration-700 ease-out delay-150"
+        :class="visible[2] ? 'opacity-100 translate-x-0 blur-0' : 'opacity-0 translate-x-8 blur-sm'"
+      >
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+          <span class="inline-flex items-center gap-1.5 bg-[#354D24] text-white text-xs sm:text-sm font-semibold px-3 py-1 rounded-full w-fit">
+            <i class="fa-solid fa-clock text-xs opacity-75"></i>
+            07:00 PM
+          </span>
+        </div>
+        <h3 class="mt-2.5 text-base sm:text-lg font-bold uppercase tracking-wide text-[#354D24]">Dinner Break</h3>
+        <p class="mt-1 text-sm text-gray-500 leading-relaxed">Enjoy delicious food, craft beers, and a chance to relax.</p>
+      </div>
+    </div>
+
+    <!-- Live Performance -->
+    <div ref="item3" class="relative flex items-center gap-4 sm:gap-6">
+      <div
+        class="shrink-0 transition-all duration-600 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
+        :class="visible[3] ? 'opacity-100 scale-100 rotate-0' : 'opacity-0 scale-50 -rotate-12'"
+      >
+        <div class="icon-pulse w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-[#354D24] bg-[#f5eedf] flex items-center justify-center z-10 shadow-sm">
+          <i class="fa-solid fa-music text-xl sm:text-2xl text-[#354D24]"></i>
+        </div>
+      </div>
+      <div
+        class="flex-1 bg-white border border-gray-100 rounded-xl px-4 py-4 sm:px-5 shadow-sm
+               transition-all duration-700 ease-out delay-150"
+        :class="visible[3] ? 'opacity-100 translate-x-0 blur-0' : 'opacity-0 translate-x-8 blur-sm'"
+      >
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+          <span class="inline-flex items-center gap-1.5 bg-[#354D24] text-white text-xs sm:text-sm font-semibold px-3 py-1 rounded-full w-fit">
+            <i class="fa-solid fa-clock text-xs opacity-75"></i>
+            09:00 PM
+          </span>
+        </div>
+        <h3 class="mt-2.5 text-base sm:text-lg font-bold uppercase tracking-wide text-[#354D24]">Live Performance</h3>
+        <p class="mt-1 text-sm text-gray-500 leading-relaxed">Live music and a special show for all attendees.</p>
+      </div>
+    </div>
+
+    <!-- Closing Ceremony -->
+    <div ref="item4" class="relative flex items-center gap-4 sm:gap-6">
+      <div
+        ref="lastIconRef"
+        class="shrink-0 transition-all duration-600 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
+        :class="visible[4] ? 'opacity-100 scale-100 rotate-0' : 'opacity-0 scale-50 -rotate-12'"
+      >
+        <div class="icon-pulse w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-[#354D24] bg-[#f5eedf] flex items-center justify-center z-10 shadow-sm">
+          <i class="fa-solid fa-trophy text-xl sm:text-2xl text-[#354D24]"></i>
+        </div>
+      </div>
+      <div
+        class="flex-1 bg-white border border-gray-100 rounded-xl px-4 py-4 sm:px-5 shadow-sm
+               transition-all duration-700 ease-out delay-150"
+        :class="visible[4] ? 'opacity-100 translate-x-0 blur-0' : 'opacity-0 translate-x-8 blur-sm'"
+      >
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+          <span class="inline-flex items-center gap-1.5 bg-[#354D24] text-white text-xs sm:text-sm font-semibold px-3 py-1 rounded-full w-fit">
+            <i class="fa-solid fa-clock text-xs opacity-75"></i>
+            11:00 PM
+          </span>
+        </div>
+        <h3 class="mt-2.5 text-base sm:text-lg font-bold uppercase tracking-wide text-[#354D24]">Closing Ceremony</h3>
+        <p class="mt-1 text-sm text-gray-500 leading-relaxed">Awards presentation and closing remarks from the organizers.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
 
     <!-- Footer: factory image as a real parallax depth-layer -->
      <footer
@@ -206,17 +211,31 @@ const item2 = ref(null)
 const item3 = ref(null)
 const item4 = ref(null)
 
+// NEW: refs for pinning the line's exact length
+const lineContainerRef = ref(null)
+const lastIconRef = ref(null)
+const lineHeight = ref(0)
+
 let prefersReducedMotion = false
 
-// raw (instant) targets, smoothed (lerped) values that chase them
 const rawLineProgress = ref(0)
 const rawFooterOffset = ref(0)
 
 let rafId = null
 let isAnimating = false
 
+// NEW: measures the exact pixel distance from the top of the line's
+// container down to the vertical CENTER of the last (trophy) icon —
+// not the bottom of its card. This is what makes the line stop
+// precisely at the icon, regardless of how tall any card is.
+function measureLineHeight() {
+  if (!lineContainerRef.value || !lastIconRef.value) return
+  const containerRect = lineContainerRef.value.getBoundingClientRect()
+  const iconRect = lastIconRef.value.getBoundingClientRect()
+  lineHeight.value = iconRect.top + iconRect.height / 2 - containerRect.top
+}
+
 function measure() {
-  // --- timeline draw progress ---
   if (timelineWrapper.value) {
     const rect = timelineWrapper.value.getBoundingClientRect()
     const midpoint = window.innerHeight * 0.5
@@ -224,7 +243,6 @@ function measure() {
     rawLineProgress.value = Math.min(Math.max(progress, 0), 1)
   }
 
-  // --- footer depth parallax ---
   if (footerSection.value) {
     const rect = footerSection.value.getBoundingClientRect()
     const total = window.innerHeight + rect.height
@@ -257,13 +275,22 @@ function tick() {
   }
 }
 
+// NEW: recompute the pinned line height on resize too — text wrapping
+// and icon position can shift between mobile/tablet/desktop widths.
+function onResize() {
+  measure()
+  measureLineHeight()
+}
+
 let observer
 onMounted(() => {
   prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
   window.addEventListener('scroll', onScroll, { passive: true })
-  window.addEventListener('resize', measure, { passive: true })
+  window.addEventListener('resize', onResize, { passive: true })
   measure()
+  measureLineHeight() // run once immediately — refs are already mounted here
+
   if (prefersReducedMotion) {
     lineProgress.value = rawLineProgress.value
     footerOffset.value = rawFooterOffset.value
@@ -289,7 +316,7 @@ onMounted(() => {
 
 onUnmounted(() => {
   window.removeEventListener('scroll', onScroll)
-  window.removeEventListener('resize', measure)
+  window.removeEventListener('resize', onResize)
   if (rafId) cancelAnimationFrame(rafId)
   if (observer) observer.disconnect()
 })

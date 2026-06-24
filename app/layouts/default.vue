@@ -4,10 +4,10 @@
     <div class="flex items-center justify-between  px-4 py-1">
       <div class="flex justify-center item-center align-center" >
         <NuxtLink to="/" class="text-lg justify-center font-bold ">
-        <img src="/company-logo.png" class="h-10 mt-1.5 w-13" alt="Beer Crown 2026 logo">
+        <img src="/company-logo.png" class="h-10 mt-1.5 w-12" alt="Beer Crown 2026 logo">
       </NuxtLink>
       <NuxtLink to="/" class="text-lg justify-center font-bold flex justify-center tracking-wide">
-        <img src="/beer-asso.png" class="h-13.5 w-15 flex" alt="Beer Crown 2026 logo">
+        <img src="/beer-asso.png" class="h-13.5 w-14 flex" alt="Beer Crown 2026 logo">
       </NuxtLink>
       </div>
       
@@ -105,11 +105,11 @@
         class="hover:text-amber-600"
       >Home</NuxtLink>
       <NuxtLink
-        to="/award"
+        to="/brewerise"
         active-class="text-amber-600 underline underline-offset-4"
         @click="menuOpen = false"
         class="hover:text-amber-600"
-      >Award</NuxtLink>
+      >Breweries</NuxtLink>
       <NuxtLink
         to="/schedule"
         active-class="text-amber-600 underline underline-offset-4"
@@ -117,23 +117,26 @@
         class="hover:text-amber-600"
       >Schedule</NuxtLink>
       <NuxtLink
-        to="/sponsor"
-        active-class="text-amber-600 underline underline-offset-4"
-        @click="menuOpen = false"
-        class="hover:text-amber-600"
-      >Sponsors</NuxtLink>
-      <NuxtLink
-        to="/brewerise"
-        active-class="text-amber-600 underline underline-offset-4"
-        @click="menuOpen = false"
-        class="hover:text-amber-600"
-      >Breweries</NuxtLink>
-      <NuxtLink
         to="/beer-style"
         active-class="text-amber-600 underline underline-offset-4"
         @click="menuOpen = false"
         class="hover:text-amber-600"
       >Beer Style</NuxtLink>
+      <NuxtLink
+        to="/award"
+        active-class="text-amber-600 underline underline-offset-4"
+        @click="menuOpen = false"
+        class="hover:text-amber-600"
+      >Award</NuxtLink>
+      
+      <NuxtLink
+        to="/sponsor"
+        active-class="text-amber-600 underline underline-offset-4"
+        @click="menuOpen = false"
+        class="hover:text-amber-600"
+      >Sponsors</NuxtLink>
+      
+      
     </nav>
 
     <!-- Vote button -->

@@ -2,7 +2,7 @@
   <div class="bg-[#F7EBD5] ">
 
     <!-- Header -->
-    <div class="max-w-3xl mx-auto px-4 pt-12 md:pt-20 mb-3 lg:pt-24 pb-8 md:pb-14 text-center">
+    <div class="max-w-3xl mx-auto px-4 pt-9 md:pt-20  lg:pt-24 pb-8 md:pb-14 text-center">
       <p
         class="text-xs md:text-sm font-semibold tracking-[0.25em] text-gray-500 uppercase mb-3
                transition-all duration-700 ease-out"
@@ -42,7 +42,7 @@
 
     <!-- Sponsors -->
     <div class="bg-[#F8EBD6]">
-      <div class="max-w-[420px] md:max-w-3xl lg:max-w-6xl mx-auto px-4 md:px-8 lg:px-10 pt-10 md:pt-14 lg:pt-16 pb-2">
+      <div class="max-w-[420px] md:max-w-3xl lg:max-w-6xl mx-auto px-4 md:px-8 lg:px-10 pt-3.5 md:pt-14 lg:pt-16 pb-2">
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-8">
           <div
