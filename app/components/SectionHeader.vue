@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center mt-5 mb-6">
+  <div class="text-center mt-5 mb-3.5">
     <h1
       class="text-4xl sm:text-5xl md:text-5xl  text-[#354D24]"
       style="font-family: 'Bebas Neue', sans-serif;"
