@@ -97,7 +97,7 @@
     </div>
 
     <!-- Nav links -->
-    <nav class="flex flex-col gap-5 px-5 py-6 text-sm text-[#036533] font-medium">
+    <nav class="flex flex-col gap-5 px-5 py-6 text-1xl text-[#036533] font-medium">
       <NuxtLink
         to="/"
         exact-active-class="text-amber-600 underline underline-offset-4"
@@ -151,29 +151,7 @@
     </div>
 
     <!-- Event info strip -->
-    <div class="mx-5 border-t border-stone-100 pt-5 pb-2 flex flex-col gap-4">
-      <div class="flex items-center gap-3">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#036533" stroke-width="1.8" class="flex-shrink-0">
-          <rect x="3" y="5" width="18" height="16" rx="2"/>
-          <path d="M8 3v4M16 3v4M3 10h18" stroke-linecap="round"/>
-        </svg>
-        <div>
-          <p class="text-[9px] font-semibold tracking-wide text-stone-500 uppercase">Date</p>
-          <p class="text-xs font-bold text-stone-800">15–17 August 2026</p>
-        </div>
-      </div>
-
-      <div class="flex items-center gap-3">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#036533" stroke-width="1.8" class="flex-shrink-0">
-          <path d="M12 21s7-6.5 7-11.5A7 7 0 0 0 5 9.5C5 14.5 12 21 12 21z"/>
-          <circle cx="12" cy="9.5" r="2.5"/>
-        </svg>
-        <div>
-          <p class="text-[9px] font-semibold tracking-wide text-stone-500 uppercase">Location</p>
-          <p class="text-xs font-bold text-stone-800">Angkor Wat, Siem Reap</p>
-        </div>
-      </div>
-    </div>
+   
 
     <!-- Footer signature, pushed to the bottom of the drawer -->
     <div class="mt-auto px-5 py-5 border-t border-stone-100">
