@@ -11,7 +11,7 @@
 
     <!-- Grid section: scoped overflow-hidden ONLY here, so it can never clip
          a sticky/fixed element that might live inside SectionHeader/SiteFooter -->
-    <div ref="gridSectionRef" class="relative overflow-hidden py-2">
+    <div ref="gridSectionRef" class="relative overflow-hidden py-4">
 
       <!-- Ambient depth blobs: pure CSS gradients, no image files — can never 404/break -->
       <div
