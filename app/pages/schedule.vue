@@ -33,7 +33,6 @@
       </div>
     </div>
 
-    <!-- Timeline -->
    <!-- Timeline -->
 <div ref="timelineWrapper" class="max-w-2xl mx-auto px-4 sm:px-6 pb-0">
   <div ref="lineContainerRef" class="relative flex flex-col gap-8 sm:gap-10">
@@ -71,8 +70,8 @@
             02:00 PM
           </span>
         </div>
-        <h3 class="mt-2.5 text-base sm:text-lg font-bold uppercase tracking-wide text-[#354D24]">Opening Ceremony</h3>
-        <p class="mt-1 text-sm text-gray-500 leading-relaxed">Welcome speech and opening performance to kick off the event.</p>
+        <h3 class="mt-2.5 text-base sm:text-lg font-bold uppercase tracking-wide text-[#354D24]">Event begins</h3>
+        <p class="mt-1 text-sm text-gray-500 leading-relaxed">Come early and try all the beers </p>
       </div>
     </div>
 
@@ -83,7 +82,7 @@
         :class="visible[1] ? 'opacity-100 scale-100 rotate-0' : 'opacity-0 scale-50 -rotate-12'"
       >
         <div class="icon-pulse w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-[#354D24] bg-[#f5eedf] flex items-center justify-center z-10 shadow-sm">
-          <i class="fa-solid fa-users text-xl sm:text-2xl text-[#354D24]"></i>
+          <i class="fa-solid fa-microphone text-xl sm:text-2xl text-[#354D24]"></i>
         </div>
       </div>
       <div
@@ -94,11 +93,11 @@
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
           <span class="inline-flex items-center gap-1.5 bg-[#354D24] text-white text-xs sm:text-sm font-semibold px-3 py-1 rounded-full w-fit">
             <i class="fa-solid fa-clock text-xs opacity-75"></i>
-            04:00 PM
+            3:15 PM
           </span>
         </div>
-        <h3 class="mt-2.5 text-base sm:text-lg font-bold uppercase tracking-wide text-[#354D24]">Activities & Booths</h3>
-        <p class="mt-1 text-sm text-gray-500 leading-relaxed">Explore activities and visit participant booths across the venue.</p>
+        <h3 class="mt-2.5 text-base sm:text-lg font-bold uppercase tracking-wide text-[#354D24]">Introduction by the MC</h3>
+        <p class="mt-1 text-sm text-gray-500 leading-relaxed">MC Luke is exactly who you want to guide you through the event</p>
       </div>
     </div>
 
@@ -109,7 +108,7 @@
         :class="visible[2] ? 'opacity-100 scale-100 rotate-0' : 'opacity-0 scale-50 -rotate-12'"
       >
         <div class="icon-pulse w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-[#354D24] bg-[#f5eedf] flex items-center justify-center z-10 shadow-sm">
-          <i class="fa-solid fa-utensils text-xl sm:text-2xl text-[#354D24]"></i>
+          <i class="fa-solid fa-headphones text-xl sm:text-2xl text-[#354D24]"></i>
         </div>
       </div>
       <div
@@ -120,11 +119,11 @@
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
           <span class="inline-flex items-center gap-1.5 bg-[#354D24] text-white text-xs sm:text-sm font-semibold px-3 py-1 rounded-full w-fit">
             <i class="fa-solid fa-clock text-xs opacity-75"></i>
-            07:00 PM
+            03:30 PM
           </span>
         </div>
-        <h3 class="mt-2.5 text-base sm:text-lg font-bold uppercase tracking-wide text-[#354D24]">Dinner Break</h3>
-        <p class="mt-1 text-sm text-gray-500 leading-relaxed">Enjoy delicious food, craft beers, and a chance to relax.</p>
+        <h3 class="mt-2.5 text-base sm:text-lg font-bold uppercase tracking-wide text-[#354D24]">DJ Shagzy (until 7:00 PM)</h3>
+        <p class="mt-1 text-sm text-gray-500 leading-relaxed">"The Craft Beer DJ" returns to PP - with funky beats and great vibes!.</p>
       </div>
     </div>
 
@@ -135,7 +134,7 @@
         :class="visible[3] ? 'opacity-100 scale-100 rotate-0' : 'opacity-0 scale-50 -rotate-12'"
       >
         <div class="icon-pulse w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-[#354D24] bg-[#f5eedf] flex items-center justify-center z-10 shadow-sm">
-          <i class="fa-solid fa-music text-xl sm:text-2xl text-[#354D24]"></i>
+          <i class="fa-solid fa-trophy text-xl sm:text-2xl text-[#354D24]"></i>
         </div>
       </div>
       <div
@@ -146,11 +145,11 @@
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
           <span class="inline-flex items-center gap-1.5 bg-[#354D24] text-white text-xs sm:text-sm font-semibold px-3 py-1 rounded-full w-fit">
             <i class="fa-solid fa-clock text-xs opacity-75"></i>
-            09:00 PM
+            07:30 PM
           </span>
         </div>
-        <h3 class="mt-2.5 text-base sm:text-lg font-bold uppercase tracking-wide text-[#354D24]">Live Performance</h3>
-        <p class="mt-1 text-sm text-gray-500 leading-relaxed">Live music and a special show for all attendees.</p>
+        <h3 class="mt-2.5 text-base sm:text-lg font-bold uppercase tracking-wide text-[#354D24]">Award Ceremony</h3>
+        <p class="mt-1 text-sm text-gray-500 leading-relaxed">The most important part of the event - who'll take the crown?</p>
       </div>
     </div>
 
@@ -162,7 +161,7 @@
         :class="visible[4] ? 'opacity-100 scale-100 rotate-0' : 'opacity-0 scale-50 -rotate-12'"
       >
         <div class="icon-pulse w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-[#354D24] bg-[#f5eedf] flex items-center justify-center z-10 shadow-sm">
-          <i class="fa-solid fa-trophy text-xl sm:text-2xl text-[#354D24]"></i>
+          <i class="fa-solid fa-music text-xl sm:text-2xl text-[#354D24]"></i>
         </div>
       </div>
       <div
@@ -173,11 +172,11 @@
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
           <span class="inline-flex items-center gap-1.5 bg-[#354D24] text-white text-xs sm:text-sm font-semibold px-3 py-1 rounded-full w-fit">
             <i class="fa-solid fa-clock text-xs opacity-75"></i>
-            11:00 PM
+            8:15 PM
           </span>
         </div>
-        <h3 class="mt-2.5 text-base sm:text-lg font-bold uppercase tracking-wide text-[#354D24]">Closing Ceremony</h3>
-        <p class="mt-1 text-sm text-gray-500 leading-relaxed">Awards presentation and closing remarks from the organizers.</p>
+        <h3 class="mt-2.5 text-base sm:text-lg font-bold uppercase tracking-wide text-[#354D24]">Live music by  QBA Band (until 10:45)</h3>
+        <p class="mt-1 text-sm text-gray-500 leading-relaxed">Feel the Carribean heat - will make you want to dance all night!</p>
       </div>
     </div>
 
