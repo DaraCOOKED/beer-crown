@@ -4,10 +4,10 @@
     <div class="flex items-center justify-between  px-4 py-1">
       <div class="flex justify-center item-center align-center" >
         <NuxtLink to="/" class="text-lg justify-center font-bold ">
-        <img src="/company-logo.png" class="h-10 mt-1.5 w-12" alt="Beer Crown 2026 logo">
+        <img src="/final-logo.png" class="h-13 mt-2.5 w-17" alt="Beer Crown 2026 logo">
       </NuxtLink>
       <NuxtLink to="/" class="text-lg justify-center font-bold flex justify-center tracking-wide">
-        <img src="/beer-asso.png" class="h-13.5 w-14 flex" alt="Beer Crown 2026 logo">
+        <img src="/beer-asso.png" class="h-18 w-1.8 flex" alt="Beer Crown 2026 logo">
       </NuxtLink>
       </div>
       
@@ -85,7 +85,7 @@
       <span class="font-semibold text-sm">
         <div class="flex justify-center align-center">
           <NuxtLink to="/" class="text-lg font-bold">
-            <img src="/company-logo.png" class="h-13 mb-2 mt-1 w-14 " alt="Beer Crown 2026 logo">
+            <img src="/final-logo.png" class="h-15 mb-2 mt-1 w-18 " alt="Beer Crown 2026 logo">
           </NuxtLink>
         </div>
       </span>
