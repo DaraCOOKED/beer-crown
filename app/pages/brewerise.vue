@@ -33,9 +33,9 @@
         >
           <ParticipantCard
             name="Sak pub"
-            description="SAK PUB Craft Beer & Bites opened its taproom and kitchen in October 2021, serving handcrafted in small batch craft beer from taps and giving people a place to savor delicious craft beers in an enjoyable and welcoming atmosphere."
+            description="Sak Pub Craft Beer & Bites is a local brewpub stands out for its impressive selection, pouring up to 12 taps that feature their own small-batch creations alongside other acclaimed brew by Cambodian craft brewer."
             logo="/sakpub.webp"
-            facebook="https://www.facebook.com/share/179fBFk2gZ/"
+            facebook="https://www.facebook.com/SakPubCraftBeerBites"
           />
         </div>
 
@@ -47,7 +47,7 @@
         >
           <ParticipantCard
             name="Projekt Brews Co."
-            description="Projekt brews is a small microbrewery based in Kampot since 2020 making modern hoppy beers."
+            description="Projekt Brew Co. is an independent craft brewery based in Kampot,  dedicated to brewing bold, modern beers with a focus on fresh, hop-forward flavours.  From hazy IPAs to experimental fruited sours."
             logo="/projectbrews.webp"
             facebook="https://www.facebook.com/profile.php?id=100063463360069"
           />
@@ -62,7 +62,7 @@
           <ParticipantCard
             name="Botanico Brewing Company"
             description="Located in the heart of Phnom Penh, Botanico is one of the oldest craft breweries in the country, creating a big range of different beers, often using locally grown ingredients. The moto is: Real Cambodian Craft Beer!"
-            logo="/botanico.webp"
+            logo="/newbotanico2.png"
             facebook="https://www.facebook.com/botanicobrewingco"
           />
         </div>
@@ -75,7 +75,7 @@
         >
           <ParticipantCard
             name="Riel Brewing and Distilling"
-            description="Riel Brewing is a pioneering craft brewery located right here in Phnom Penh, celebrated for helping to establish the local craft beer scene. They are known for their creative and high-quality beers that often incorporate unique Cambodian ingredients."
+            description="Established in 2015 in Phnom Penh, Riel Brewing is an independent microbrewery driven by a custom-built, highly automated brewing system. Utilizing premium local and imported ingredients to produce a dynamic, constantly rotating lineup of craft beers, ranging from dialed-in core IPAs to highly experimental, small-batch sours and stouts."
             logo="/riel.png"
             facebook="https://www.facebook.com/rielbrewing"
           />
@@ -89,8 +89,8 @@
         >
           <ParticipantCard
             name="Fuzzy Logic"
-            description="Established in 2014, Fuzzy Logic Brewing Co. is one of the pioneers in introducing craft beer to Cambodia and South East Asia. Our brewery has earned a reputation for dedicating itself to consistent, balanced beers.  Well known for its Thunderslap IPA and John Lemon Hard Lemonade, Fuzzy Logic has a range of excellent quality products in kegs, cans and bottles and is distributed widely across Cambodia."
-            logo="/fuzzylogic.webp"
+            description="Fuzzy Logic is one of the OGs of craft brewing in South East Asia producing award winning ales and our ever popular John Lemon Hard Lemonade."
+            logo="/newfuzzy.png"
             facebook="https://www.facebook.com/FuzzyLogicCambodia"
           />
         </div>
@@ -102,8 +102,8 @@
           :style="{ transitionDelay: `${waveDelay(5)}ms` }"
         >
           <ParticipantCard
-            name="Chug Lab"
-            description="Chug Brew is a very small nano brewery located in Phnom Penh with the focus on high quality modern craft beers. We also have a heavy metal themed Tap House 'Chug Lab' in Bkk3."
+            name="Chug Brew"
+            description="Chug Brew is a very small nano brewery based in Phnom Penh with a niche heavy metal themed tap room. Our focus is on producing a variety of small batch delicious modern ales."
             logo="/chuglab.webp"
             facebook="https://www.facebook.com/thechuglab"
           />
@@ -118,10 +118,10 @@
           <ParticipantCard
             name="Brew Khnear"
             description="At Brew Khnear, (loosely translated as ‘Brew Together,’) our focus is on getting that work/life balance right.
-                  With solid and creative beers made from the finest ingredients using traditional brewing techniques, we strive not to work too hard, but to make time for ourselves and those who are important to us.
-                  What better way to bring us all together than drinking good beer."
+                      With solid and creative beers made from the finest ingredients using traditional brewing techniques, we strive not to work too hard, but to make time for ourselves and those who are important to us.
+                      What better way to bring us all together than drinking good beer."
             logo="/brewkhnear.webp"
-            facebook="https://facebook.com/betabrewery"
+            
           />
         </div>
 
@@ -133,8 +133,8 @@
         >
           <ParticipantCard
             name="Funghi Art"
-            description="Create new value for Cambodian rice through fermentation technology.We produce 3 kinds of beer, craft sake, sweet potato and rice Shochu and Gin. All made from Cambodian Rice."
-            logo="/funghiart.webp"
+            description="Fungi Art is a fermentation company dedicated to maximizing the value of Cambodian rice through craft beer, sake, spirits, and mycoprotein. We believe fermentation can create exceptional flavors while building a more sustainable future for Cambodian agriculture."
+            logo="/newfunghi.jpeg"
             facebook="https://www.facebook.com/profile.php?id=100069892638809"
           />
         </div>
@@ -147,7 +147,7 @@
         >
           <ParticipantCard
             name="Jaya-Vara Meadery"
-            description="Jaya-Vara Meadery has been crafting unique meads and beers in Cambodia for the past 3 years. started as a passion for traditional honey wine has evolved into a full-fledged brewery experimenting with bold flavors and local ingredients."
+            description="Jaya Vara. From meadery to brewery, we bring twice the craftsmanship. Two traditions, one passion."
             logo="/jaya.jpg"
             facebook="https://www.facebook.com/profile.php?id=100080223013722"
           />
@@ -161,8 +161,8 @@
         >
           <ParticipantCard
             name="Krama Craft Brewery"
-            description="Krama Craft Brewery is a cozy craft brewery located in Siem Reap, founded by two partners — one French, one Cambodian. Just minutes from the city center, it offers creative, locally inspired beers like the Triple Khmer and Black IPA. With a warm atmosphere, Cambodian ingredients, and genuine hospitality, Krama is the perfect stop for a unique and authentic craft beer experience in Siem Reap"
-            logo="/kramacraft.webp"
+            description="Krama Craft Brewery, based in Siem Reap, Cambodia, is inspired by centuries of brewing tradition and crafts authentic beers that combine heritage, precision, and the finest ingredients. Every pint is brewed with passion and finished with a distinctive French touch."
+            logo="/newkrama.png"
             facebook="https://www.facebook.com/profile.php?id=100095224728868"
           />
         </div>
@@ -175,7 +175,7 @@
         >
           <ParticipantCard
             name="Himawari Microbrewery"
-            description="Himawari Microbrewery is the 1st and only microbrewery launched by it’s 5-star hotel-apartments in Cambodia. Made from the finest malt and hops, the beers crafted here are unique in flavour and of the highest quality. Himawari Microbrewery's brewmaster, Neo, has had many years of brewing experience and has designed 7 exclusive brews, 3 of which have won international awards. There’s definitely a craft beer for every palate."
+            description="Himawari Microbrewery is the 1st and only microbrewery launched by it’s 5-star hotel-apartments in Cambodia. Made from the finest malt and hops, the beers crafted here are unique in flavour and of the highest quality"
             logo="/himavari.jpg"
             facebook="https://www.facebook.com/HimawariHotelMicrobrewery"
           />
