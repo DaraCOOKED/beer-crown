@@ -16,13 +16,14 @@
         class="flex items-center justify-center gap-4 mt-3 md:mt-5 transition-all duration-700 ease-out delay-300"
         :class="loaded ? 'opacity-100 scale-100' : 'opacity-0 scale-95'"
       >
-        <div class="h-px w-20 sm:w-40 md:w-56 bg-[#354D24] opacity-40"></div>
-        <img
-          src="/linelogo.png"
-          alt="Logo"
-          class="w-10 h-10 sm:w-7 sm:h-7 md:w-9 md:h-9 object-contain transition-transform duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
+        <div class="h-px w-20 sm:w-40 md:w-56 bg-[#354E20] opacity-40"></div>
+        <div
+          role="img"
+          aria-label="Logo"
+          class="w-10 h-10 sm:w-7 sm:h-7 md:w-9 md:h-9 bg-[#354E20] transition-transform duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
           :class="loaded ? 'rotate-0 scale-100' : '-rotate-90 scale-50'"
-        />
+          style="-webkit-mask-image:url('/linelogo.png'); mask-image:url('/linelogo.png'); -webkit-mask-size:contain; mask-size:contain; -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat; -webkit-mask-position:center; mask-position:center;"
+        ></div>
         <div class="h-px w-20 sm:w-40 md:w-56 bg-[#354D24] opacity-40"></div>
       </div>
 
@@ -40,7 +41,7 @@
 
         <!-- Ambient depth blobs: pure CSS gradients, no image files, can never 404 -->
         <div
-          class="absolute -top-16 -left-20 w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-[#354E20]/8 blur-3xl pointer-events-none will-change-transform"
+          class="absolute -top-16 -left-20 w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-[#ffff]/8 blur-3xl pointer-events-none will-change-transform"
           :style="{ transform: `translateY(${blobADrift}px)` }"
         ></div>
         <div
@@ -58,7 +59,7 @@
             :style="{ transitionDelay: '0ms' }"
           >
             <div
-              class="bg-[#DFD8C2] rounded-2xl p-8 shadow-[0_10px_30px_rgba(53,78,32,0.05)] border border-[#354E20]/10 flex flex-col items-center text-center h-full transition-all duration-300 hover:shadow-[0_20px_40px_rgba(53,78,32,0.1)] hover:-translate-y-1">
+              class="bg-white rounded-2xl p-8 shadow-[0_10px_30px_rgba(53,78,32,0.05)] border border-[#354E20]/10 flex flex-col items-center text-center h-full transition-all duration-300 hover:shadow-[0_20px_40px_rgba(53,78,32,0.1)] hover:-translate-y-1">
               <div
                 class="mb-5 text-[#354E20] transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
                 :class="cardVisible[0] ? 'scale-100 rotate-0' : 'scale-50 -rotate-12'"
@@ -73,11 +74,11 @@
 
               <h3 class="text-[#354E20] font-black text-xl mb-2 tracking-wide">GRAND AWARD</h3>
 
-              <span class="inline-block bg-[#354E20]/10 text-[#354E20] text-xs font-bold px-4 py-1 rounded-full mb-5">
+              <span class="inline-block bg-[#354E20]/10 text-black text-xs font-bold px-4 py-1 rounded-full mb-5">
                 Official Competition
               </span>
 
-              <p class="text-[#354E20]/80 text-sm leading-relaxed mb-8 flex-grow">
+              <p class="text-black/80 text-sm leading-relaxed mb-8 flex-grow">
                 Judged strictly by a panel of six international experts using standard BJCP score sheets in a rigorous blind
                 tasting format.
               </p>
@@ -92,7 +93,7 @@
                     <path fill="white"
                       d="M12 11.5l1.03 2.09 2.31.34-1.67 1.63.39 2.3L12 16.77l-2.06 1.09.39-2.3-1.67-1.63 2.31-.34L12 11.5z" />
                   </svg>
-                  <span class="text-[10px] font-bold uppercase tracking-wider text-[#354E20]/60">
+                  <span class="text-[10px] font-bold uppercase tracking-wider text-black/60">
                     Gold
                   </span>
                 </div>
@@ -103,7 +104,7 @@
                     <circle cx="12" cy="15" r="6" />
                     <text x="12" y="18" text-anchor="middle" font-size="7" fill="white" font-weight="bold">2</text>
                   </svg>
-                  <span class="text-[10px] font-bold uppercase tracking-wider text-[#354E20]/60">
+                  <span class="text-[10px] font-bold uppercase tracking-wider text-black/60">
                     Silver
                   </span>
                 </div>
@@ -114,7 +115,7 @@
                     <circle cx="12" cy="15" r="6" />
                     <text x="12" y="18" text-anchor="middle" font-size="7" fill="white" font-weight="bold">3</text>
                   </svg>
-                  <span class="text-[10px] font-bold uppercase tracking-wider text-[#354E20]/60">
+                  <span class="text-[10px] font-bold uppercase tracking-wider text-black/60">
                     Bronze
                   </span>
                 </div>
@@ -130,7 +131,7 @@
             :style="{ transitionDelay: '150ms' }"
           >
             <div
-              class="bg-[#DFD8C2] rounded-2xl p-8 shadow-[0_10px_30px_rgba(53,78,32,0.05)] border border-[#354E20]/10 flex flex-col items-center text-center h-full transition-all duration-300 hover:shadow-[0_20px_40px_rgba(53,78,32,0.1)] hover:-translate-y-1">
+              class="bg-white rounded-2xl p-8 shadow-[0_10px_30px_rgba(53,78,32,0.05)] border border-[#354E20]/10 flex flex-col items-center text-center h-full transition-all duration-300 hover:shadow-[0_20px_40px_rgba(53,78,32,0.1)] hover:-translate-y-1">
               <div
                 class="mb-5 text-[#354E20] transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
                 :class="cardVisible[1] ? 'scale-100 rotate-0' : 'scale-50 -rotate-12'"
@@ -145,11 +146,11 @@
 
               <h3 class="text-[#354E20] font-black text-xl mb-2 tracking-wide">PEOPLE'S CHOICE</h3>
 
-              <span class="inline-block bg-[#354E20]/10 text-[#354E20] text-xs font-bold px-4 py-1 rounded-full mb-5">
+              <span class="inline-block bg-[#354E20]/10 text-black text-xs font-bold px-4 py-1 rounded-full mb-5">
                 Festival Attendees
               </span>
 
-              <p class="text-[#354E20]/80 text-sm leading-relaxed mb-8 flex-grow">
+              <p class="text-black/80 text-sm leading-relaxed mb-8 flex-grow">
                 Voted on entirely by festival attendees. This award reflects public preference, drinkability, and community
                 popularity.
               </p>
@@ -165,7 +166,7 @@
             :style="{ transitionDelay: '300ms' }"
           >
             <div
-              class="bg-[#DFD8C2] rounded-2xl p-8 shadow-[0_10px_30px_rgba(53,78,32,0.05)] border border-[#354E20]/10 flex flex-col items-center text-center h-full transition-all duration-300 hover:shadow-[0_20px_40px_rgba(53,78,32,0.1)] hover:-translate-y-1">
+              class="bg-white rounded-2xl p-8 shadow-[0_10px_30px_rgba(53,78,32,0.05)] border border-[#354E20]/10 flex flex-col items-center text-center h-full transition-all duration-300 hover:shadow-[0_20px_40px_rgba(53,78,32,0.1)] hover:-translate-y-1">
               <div
                 class="mb-5 text-[#354E20] transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
                 :class="cardVisible[2] ? 'scale-100 rotate-0' : 'scale-50 -rotate-12'"
@@ -180,11 +181,11 @@
 
               <h3 class="text-[#354E20] font-black text-xl mb-2 tracking-wide">EXCELLENCE AWARD</h3>
 
-              <span class="inline-block bg-[#354E20]/10 text-[#354E20] text-xs font-bold px-4 py-1 rounded-full mb-5">
+              <span class="inline-block bg-[#354E20]/10 text-black text-xs font-bold px-4 py-1 rounded-full mb-5">
                 Innovation & Style
               </span>
 
-              <p class="text-[#354E20]/80 text-sm leading-relaxed mb-8 flex-grow">
+              <p class="text-black/80 text-sm leading-relaxed mb-8 flex-grow">
                 Celebrating technical mastery and boundary-pushing ingredients. Awarded to brewers who show exceptional
                 creativity within their styles.
               </p>
