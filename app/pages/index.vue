@@ -102,7 +102,7 @@
           </svg>
           <div>
             <p class="text-[10px] font-semibold tracking-wide text-stone-600">DATE</p>
-            <p class="text-sm font-bold text-stone-900">15 - 17 August 2026</p>
+            <p class="text-sm font-bold text-stone-900">18 July 2026</p>
           </div>
         </div>
 
@@ -134,7 +134,8 @@
           </svg>
           <div>
             <p class="text-[10px] font-semibold tracking-wide text-stone-600">LOCATION</p>
-            <p class="text-sm font-bold text-stone-900">Angkor Wat, Siem Reap</p>
+            <p class="text-sm font-bold text-stone-900">Botanico Craft Beer Garden</p>
+            <span class="text-[10px] font-semibold text-gray-700">Street 29, Phnom Penh</span>
           </div>
         </div>
 
