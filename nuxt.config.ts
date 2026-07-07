@@ -21,6 +21,18 @@ export default defineNuxtConfig({
           rel: "stylesheet",
           href: "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap",
         },
+          {
+          rel: "icon",
+          type: "image/png",
+          href: "/company.png",
+        },
+
+        // Apple devices
+        {
+          rel: "apple-touch-icon",
+          href: "/company.png"  ,
+        },
+
       ],
     },
   },
