@@ -96,7 +96,7 @@
                  transition-all duration-700 ease-out delay-0"
           :class="infoVisible ? 'opacity-100 translate-y-0 blur-0 scale-100' : 'opacity-0 translate-y-8 blur-sm scale-95'"
         >
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2F4A2F" stroke-width="1.8">
+          <svg width="22" class="mt-2" height="22" viewBox="0 0 24 24" fill="none" stroke="#2F4A2F" stroke-width="1.8">
             <rect x="3" y="5" width="18" height="16" rx="2"/>
             <path d="M8 3v4M16 3v4M3 10h18" stroke-linecap="round"/>
           </svg>
@@ -112,13 +112,13 @@
                  transition-all duration-700 ease-out delay-150"
           :class="infoVisible ? 'opacity-100 translate-y-0 blur-0 scale-100' : 'opacity-0 translate-y-8 blur-sm scale-95'"
         >
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2F4A2F" stroke-width="1.8">
+          <svg width="22" class="mt-2" height="22" viewBox="0 0 24 24" fill="none" stroke="#2F4A2F" stroke-width="1.8">
             <circle cx="12" cy="12" r="9"/>
             <path d="M12 7v5l3 2" stroke-linecap="round"/>
           </svg>
           <div>
             <p class="text-[10px] font-semibold tracking-wide text-stone-600">TIME</p>
-            <p class="text-sm font-bold text-stone-900">02:00 PM - 11:00 PM</p>
+            <p class="text-sm font-bold text-stone-900">02:00 PM - 11:30       PM</p>
           </div>
         </div>
 
@@ -128,14 +128,14 @@
                  transition-all duration-700 ease-out delay-300"
           :class="infoVisible ? 'opacity-100 translate-y-0 blur-0 scale-100' : 'opacity-0 translate-y-8 blur-sm scale-95'"
         >
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2F4A2F" stroke-width="1.8">
+          <svg width="22" class="" height="22" viewBox="0 0 24 24" fill="none" stroke="#2F4A2F" stroke-width="1.8">
             <path d="M12 21s7-6.5 7-11.5A7 7 0 0 0 5 9.5C5 14.5 12 21 12 21z"/>
             <circle cx="12" cy="9.5" r="2.5"/>
           </svg>
           <div>
             <p class="text-[10px] font-semibold tracking-wide text-stone-600">LOCATION</p>
             <p class="text-sm font-bold text-stone-900">Botanico Craft Beer Garden</p>
-            <span class="text-[10px] font-semibold text-gray-700">Street 29, Phnom Penh</span>
+            <p class="text-[9px] font-semibold text-gray-700">Street 29, Phnom Penh</p>
           </div>
         </div>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center gap-2 lg:gap-2.5">
+  <div class="flex flex-col items-center gap-2 align-center lg:gap-2.5">
     <div class="w-full aspect-square rounded-xl lg:rounded-2xl bg-white border border-[#2F4A2F]/15 shadow-sm flex items-center justify-center overflow-hidden p-3 lg:p-4 hover:scale-105 transition-transform duration-300">
       <img :src="logo" :alt="name" class="max-w-full max-h-full object-contain" />
     </div>

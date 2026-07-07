@@ -5,21 +5,21 @@
     <div class="max-w-3xl mx-auto px-4 pt-9 md:pt-20  lg:pt-24 pb-8 md:pb-14 text-center">
       <p
         class="text-xs md:text-sm font-semibold tracking-[0.25em] text-gray-500 uppercase mb-3
-               transition-all duration-700 ease-out"
+               transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
         :class="loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'"
       >
         Cambodia Craft Beer Crown 2026
       </p>
       <h1
         class="text-4xl md:text-6xl lg:text-7xl text-[#354D24] font-bold uppercase
-               transition-all duration-700 ease-out delay-150"
+               transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] delay-150"
         :class="loaded ? 'opacity-100 translate-y-0 blur-0' : 'opacity-0 translate-y-4 blur-sm'"
         style="font-family: 'Bebas Neue', sans-serif;"
       >
         Our Sponsors
       </h1>
       <div
-        class="flex items-center justify-center gap-4 mt-3 md:mt-5 transition-all duration-700 ease-out delay-300"
+        class="flex items-center justify-center gap-4 mt-3 md:mt-5 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] delay-300"
         :class="loaded ? 'opacity-100 scale-100' : 'opacity-0 scale-95'"
       >
         <div class="h-px w-20 sm:w-40 md:w-56 bg-[#354D24] opacity-40"></div>
@@ -33,7 +33,7 @@
       </div>
       <p
         class="mt-4 text-[#354E20]/70 text-sm md:text-base max-w-md md:max-w-xl mx-auto font-medium
-               transition-all duration-700 ease-out delay-[450ms]"
+               transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] delay-[450ms]"
         :class="loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'"
       >
         Honoring the brands and partners who help make Beer Crown 2026 possible.
@@ -49,7 +49,8 @@
             v-for="(tier, index) in tiers"
             :key="tier.title"
             :ref="(el) => setTierRef(el, index)"
-            class="transition-all duration-700 ease-out"
+            class="transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]
+                   [@media(hover:hover)]:hover:-translate-y-1.5 [@media(hover:hover)]:hover:duration-300"
             :class="tierVisible[index] ? 'opacity-100 translate-y-0 blur-0 scale-100' : 'opacity-0 translate-y-10 blur-sm scale-95'"
             :style="{ transitionDelay: `${index * 120}ms` }"
           >
@@ -66,8 +67,9 @@
             to="https://docs.google.com/forms/d/e/1FAIpQLScEjueBWitDWygOZkaHDnkADWIHhYdgZ-lH_u3EvKM2RzL1AA/viewform"
             target="_blank"
             rel="noopener noreferrer"
-            class="relative z-10 flex items-center justify-center gap-2 bg-[#2F4A2F] text-[#EFE3C8] text-sm md:text-base tracking-wide rounded-lg py-2.5 px-4 md:py-3.5 md:px-10 lg:py-4 lg:px-16 w-full md:w-fit
-                   hover:bg-[#243a24] transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-[450ms]"
+            class="relative z-10 flex items-center justify-center gap-2 bg-[#2F4A2F] text-[#EFE3C8] text-sm md:text-base tracking-wide rounded-lg py-2.5 px-4 md:py-3.5 md:px-10 lg:py-4 lg:px-16 w-full md:w-fit touch-manipulation
+                   hover:bg-[#243a24] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-[#2F4A2F] focus-visible:ring-[#EFE3C8]
+                   transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-[450ms]"
             :class="loaded ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'"
             style="font-family: 'Bebas Neue', sans-serif;"
           >
@@ -80,11 +82,12 @@
 
       </div>
 
-      <!-- Decoration image: now its own sibling, with a small, intentional bottom margin
-           instead of inheriting the section's large bottom padding -->
+      <!-- Decoration image: fades/slides in on scroll like the tiers do, then breathes gently via decorScale -->
       <div
         ref="decorSection"
-        class="mt-8 md:mt-16   lg:mt-24 mb-1 md:mb-20 lg:mb-14 max-w-6xl mx-auto px-4 md:px-8 overflow-hidden md:rounded-3xl"
+        class="mt-8 md:mt-16   lg:mt-24 mb-1 md:mb-20 lg:mb-14 max-w-6xl mx-auto px-4 md:px-8 overflow-hidden md:rounded-3xl
+               transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
+        :class="decorVisible ? 'opacity-100 translate-y-0 blur-0' : 'opacity-0 translate-y-10 blur-sm'"
       >
         <img
           src="/image 25.png"
@@ -101,39 +104,39 @@
 <script setup>
 const tiers = ref([
   {
-    title: 'Platinum Sponsors',
+    title: 'Main Sponsors',
     variant: 'platinum',
     sponsors: [
-      { name: 'Yakima', logo: '/sponsors/yakima.png' },
-      { name: 'Fermentis', logo: '/sponsors/fermentis.png' },
-      { name: 'Fuglsang', logo: '/sponsors/fuglsang.png' },
-    ]
-  },
-  {
-    title: 'Gold Sponsors',
-    variant: 'gold',
-    sponsors: [
-      { name: 'Bertie', logo: '/sponsors/bertie.png' },
-      { name: 'Thaitan', logo: '/sponsors/thaitan.png' },
-      { name: 'Skaitch', logo: '/sponsors/skaitch.png' },
+      { name: 'HMG', logo: '/sponsors/main-1.jpg' },
+      { name: 'BathHaas', logo: '/sponsors/main-6.jpg' },
+      { name: 'Soufflet Malt', logo: '/sponsors/main-5.jpg' },
+      { name: 'WHCLab', logo: '/sponsors/main-4.png' },
+      { name: 'Barret Burston', logo: '/sponsors/main-2.jpg' },
+      { name: 'Castle Malting', logo: '/sponsors/main-3.png' },
     ]
   },
   {
     title: 'Silver Sponsors',
     variant: 'silver',
     sponsors: [
-      { name: 'Smart', logo: '/sponsors/smart.png' },
-      { name: 'ABA', logo: '/sponsors/aba.png' },
-      { name: 'Wing', logo: '/sponsors/wing.png' },
+      { name: 'Naga Balm', logo: '/sponsors/naga.jpg' },
+      { name: 'Coco Khmer', logo: '/sponsors/coco-khmer.jpg' },
+      { name: 'Degrasan', logo: '/sponsors/degrasan.png' },
+      { name: 'Silk Screen - Printing Lab', logo: '/sponsors/silk-screen.png' },
     ]
   },
   {
-    title: 'Partners',
+    title: 'Venue Sponsor',
+    variant: 'gold',
+    sponsors: [
+      { name: 'Botanico Craft Beer Garden', logo: '/sponsors/vanue-1.jpg' },
+    ]
+  },
+  {
+    title: 'Ticketing Partner',
     variant: 'partners',
     sponsors: [
-      { name: 'Beer Association', logo: '/sponsors/beer-asso.png' },
-      { name: 'Botanico', logo: '/sponsors/botanico.png' },
-      { name: 'Box Office', logo: '/sponsors/boxoffice.png' },
+      { name: 'Vibe Event Solutions', logo: '/sponsors/vibe.jpg' },
     ]
   },
 ])
@@ -143,6 +146,7 @@ const tierVisible = reactive(tiers.value.map(() => false))
 const tierRefs = []
 
 const decorSection = ref(null)
+const decorVisible = ref(false)
 const rawDecorProgress = ref(0)
 const decorScale = ref(1)
 
@@ -200,6 +204,10 @@ onMounted(() => {
   observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
+        if (entry.target === decorSection.value) {
+          if (entry.isIntersecting) decorVisible.value = true
+          return
+        }
         const index = tierRefs.indexOf(entry.target)
         if (index !== -1 && entry.isIntersecting) {
           tierVisible[index] = true
@@ -209,6 +217,7 @@ onMounted(() => {
     { threshold: 0.15 }
   )
   tierRefs.forEach((el) => el && observer.observe(el))
+  if (decorSection.value) observer.observe(decorSection.value)
 })
 
 onUnmounted(() => {
@@ -225,5 +234,10 @@ onUnmounted(() => {
     transition: none !important;
     animation: none !important;
   }
+}
+
+/* Removes the grey tap-flash Android/iOS browsers add on tap, so taps feel as clean as a hover */
+a, button {
+  -webkit-tap-highlight-color: transparent;
 }
 </style>

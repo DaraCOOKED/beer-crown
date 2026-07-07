@@ -3,7 +3,7 @@
     class="relative rounded-3xl px-4 lg:px-6 pt-7 lg:pt-9 pb-6 lg:pb-8 border-2 transition-all duration-300"
     :class="[style.border, style.shadow, style.hoverShadow]"
   >
-    <div class="absolute -top-2 left-1/2 -translate-x-1/2 flex items-center gap-2 bg-[#F8EBD6] px-3">
+    <div class="absolute -top-2 left-1/2 -translate-x-1/2 flex items-center item-center gap-2 bg-[#F8EBD6] px-3">
       <span class=" rounded-full opacity-70" :class="style.line"></span>
       <h2
         class="text-[11px] sm:text-xs lg:text-sm font-bold uppercase tracking-[0.15em] whitespace-nowrap"
@@ -20,6 +20,7 @@
         :key="sponsor.name + index"
         :logo="sponsor.logo"
         :name="sponsor.name"
+        :class="logoPlacementClass(index)"
       />
     </div>
   </div>
@@ -64,4 +65,11 @@ const tierStyles = {
 }
 
 const style = computed(() => tierStyles[props.variant] || tierStyles.platinum)
+
+function logoPlacementClass(index) {
+  const isSingleSponsorTier = props.sponsors.length === 1
+  const isLastCenteredSponsor = props.sponsors.length % 3 === 1 && index === props.sponsors.length - 1
+
+  return isSingleSponsorTier || isLastCenteredSponsor ? 'col-start-2' : ''
+}
 </script>
