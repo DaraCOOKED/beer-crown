@@ -72,7 +72,7 @@
                 </svg>
               </div>
 
-              <h3 class="text-[#354E20] font-black text-xl mb-2 tracking-wide">GRAND AWARD</h3>
+              <h3 class="text-[#354E20] font-black text-xl mb-2 tracking-wide">GRAND AWARDS</h3>
 
               <span class="inline-block bg-[#354E20]/10 text-black text-xs font-bold px-4 py-1 rounded-full mb-5">
                 Official Competition
@@ -179,7 +179,7 @@
                 </svg>
               </div>
 
-              <h3 class="text-[#354E20] font-black text-xl mb-2 tracking-wide">EXCELLENCE AWARD</h3>
+              <h3 class="text-[#354E20] font-black text-xl mb-2 tracking-wide">EXCELLENCE AWARDS</h3>
 
               <span class="inline-block bg-[#354E20]/10 text-black text-xs font-bold px-4 py-1 rounded-full mb-5">
                 Innovation & Style
