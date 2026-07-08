@@ -135,7 +135,6 @@
           <div>
             <p class="text-[10px] font-semibold tracking-wide text-stone-600">LOCATION</p>
             <p class="text-sm font-bold text-stone-900">Botanico Craft Beer Garden</p>
-            <p class="text-[9px] font-semibold text-gray-700">Street 29, Phnom Penh</p>
           </div>
         </div>
 
