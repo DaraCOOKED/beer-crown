@@ -196,7 +196,7 @@
             <path d="M13 6V4.5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2V6" stroke-linecap="round"/>
             <path d="M12 19l3.5 3.5L24 14" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <p class="mt-3 text-sm md:text-base font-bold uppercase text-stone-900">1. Choose</p>
+          <p class="mt-3 text-sm md:text-base font-bold uppercase text-stone-900">2. Choose</p>
           <p class="mt-1 text-xs md:text-sm font-medium text-stone-700 leading-snug">Pick your<br />favorites</p>
         </div>
 
@@ -211,7 +211,7 @@
             <path d="M16 16L29 4" stroke-linecap="round"/>
             <path d="M25 3l6 2-2 6" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <p class="mt-3 text-sm md:text-base font-bold uppercase text-stone-900">1. Vote</p>
+          <p class="mt-3 text-sm md:text-base font-bold uppercase text-stone-900">3. Vote</p>
           <p class="mt-1 text-xs md:text-sm font-medium text-stone-700 leading-snug">Vote and support<br />the best</p>
         </div>
 
