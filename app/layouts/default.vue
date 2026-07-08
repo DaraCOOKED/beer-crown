@@ -168,7 +168,7 @@
   </div>
     <footer class="bg-[#F7EBD4] border-t  border-stone-400 py-4 px-4">
     <p class="text-center text-xs sm:text-sm text-[#354D24] font-medium tracking-wide">
-      © {{ year }} CBCC — Cambodia Craft Beer Crown • Event: 15–17 August 2026 • Angkor Wat, Siem Reap
+      ©  Cambodian Craft Beer Crown {{ year }} — Saturday July 18 at Botanico Craft Beer Garden, Phnom Penh.
     </p>
   </footer>
 </template>

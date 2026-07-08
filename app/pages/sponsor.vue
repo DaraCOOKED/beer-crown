@@ -136,7 +136,7 @@ const tiers = ref([
     title: 'Ticketing Partner',
     variant: 'partners',
     sponsors: [
-      { name: 'Vibe Event Solutions', logo: '/sponsors/vibe.jpg' },
+      { name: 'Vibe Event Solutions', logo: '/sponsors/vibe.png' },
     ]
   },
 ])
