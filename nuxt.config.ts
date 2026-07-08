@@ -24,13 +24,13 @@ export default defineNuxtConfig({
           {
           rel: "icon",
           type: "image/png",
-          href: "/company.png",
+          sizes: "50x50",
+          href: "/final-logo.png",
         },
-
-        // Apple devices
         {
           rel: "apple-touch-icon",
-          href: "/company.png"  ,
+          sizes: "180x180",
+          href: "/apple-touch-icon.png",
         },
 
       ],
