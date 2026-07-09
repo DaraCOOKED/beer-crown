@@ -128,7 +128,7 @@
                  transition-all duration-700 ease-out delay-300"
           :class="infoVisible ? 'opacity-100 translate-y-0 blur-0 scale-100' : 'opacity-0 translate-y-8 blur-sm scale-95'"
         >
-          <svg width="22" class="" height="22" viewBox="0 0 24 24" fill="none" stroke="#2F4A2F" stroke-width="1.8">
+          <svg width="22" class="mt-2" height="22" viewBox="0 0 24 24" fill="none" stroke="#2F4A2F" stroke-width="1.8">
             <path d="M12 21s7-6.5 7-11.5A7 7 0 0 0 5 9.5C5 14.5 12 21 12 21z"/>
             <circle cx="12" cy="9.5" r="2.5"/>
           </svg>

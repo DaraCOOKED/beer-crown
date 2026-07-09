@@ -30,7 +30,7 @@
 const props = defineProps({
   title: { type: String, required: true },
   sponsors: { type: Array, required: true },
-  variant: { type: String, default: 'platinum' } // platinum | gold | silver | partners
+  variant: { type: String, default: 'platinum' } // platinum | gold | silver | venue | partners
 })
 
 const tierStyles = {
@@ -54,6 +54,13 @@ const tierStyles = {
     hoverShadow: 'hover:shadow-[0_12px_30px_-8px_rgba(167,169,172,0.5)]',
     title: 'text-[#7c7e81]',
     line: 'bg-[#A7A9AC]',
+  },
+  venue: {
+    border: 'border-[#5F7A4D]/45',
+    shadow: 'shadow-[0_6px_22px_-8px_rgba(95,122,77,0.28)]',
+    hoverShadow: 'hover:shadow-[0_12px_30px_-8px_rgba(95,122,77,0.38)]',
+    title: 'text-[#3F5A38]',
+    line: 'bg-[#5F7A4D]',
   },
   partners: {
     border: 'border-[#2F4A2F]/45',

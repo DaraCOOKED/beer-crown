@@ -4,16 +4,23 @@
 
       <!-- Header Section: page-load cascade -->
       <div class="text-center mb-12">
+         <p
+        class="text-xs md:text-sm font-semibold tracking-[0.25em] text-gray-500 uppercase mb-3
+               transition-all duration-700 ease-out"
+        :class="loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'"
+      >
+        Cambodia Craft Beer Crown 2026
+      </p>
         <h1
-          class="text-4xl md:text-5xl font-black text-[#354E20] uppercase tracking-wider
-                 transition-all duration-700 ease-out"
+          class="text-3xl md:text-5xl text-center item-center text-[#354D24] font-bold uppercase
+               transition-all duration-700 ease-out delay-150"
           :class="loaded ? 'opacity-100 translate-y-0 blur-none' : 'opacity-0 translate-y-4 blur-sm'"
         >
           Awards
         </h1>
 
         <div
-        class="flex items-center justify-center gap-4 mt-3 md:mt-5 transition-all duration-700 ease-out delay-300"
+        class="flex items-center justify-center gap-4 mt-3 mb-3 md:mt-5 transition-all duration-700 ease-out delay-300"
         :class="loaded ? 'opacity-100 scale-100' : 'opacity-0 scale-95'"
       >
         <div class="h-px w-20 sm:w-40 md:w-56 bg-[#354E20] opacity-40"></div>
@@ -32,7 +39,8 @@
                  transition-all duration-700 ease-out delay-300"
           :class="loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'"
         >
-          Recognizing excellence and celebrating beer crafting achievements.
+Three prestigious categories await our winners
+
         </p>
       </div>
 

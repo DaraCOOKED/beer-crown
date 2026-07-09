@@ -2,7 +2,7 @@
   <div class="min-h-screen bg-[#F7EBD5] overflow-x-hidden">
 
     <!-- Header -->
-    <div class="max-w-3xl mx-auto px-4 pt-12 pb-8 text-center">
+    <div class="max-w-3xl mx-auto px-4 pt-6 pb-8 text-center">
       <p
         class="text-xs md:text-sm font-semibold tracking-[0.25em] text-gray-500 uppercase mb-3
                transition-all duration-700 ease-out"
@@ -23,12 +23,13 @@
         :class="loaded ? 'opacity-100 scale-100' : 'opacity-0 scale-95'"
       >
         <div class="h-px w-20 sm:w-40 md:w-56 bg-[#354D24] opacity-40"></div>
-        <img
-          src="/linelogo.png"
-          alt="Logo"
-          class="w-10 h-10 sm:w-7 sm:h-7 md:w-9 md:h-9 object-contain transition-transform duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
+        <div
+          role="img"
+          aria-label="Logo"
+          class="w-10 h-10 sm:w-7 sm:h-7 md:w-9 md:h-9 bg-[#354E20] transition-transform duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
           :class="loaded ? 'rotate-0 scale-100' : '-rotate-90 scale-50'"
-        />
+          style="-webkit-mask-image:url('/linelogo.png'); mask-image:url('/linelogo.png'); -webkit-mask-size:contain; mask-size:contain; -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat; -webkit-mask-position:center; mask-position:center;"
+        ></div>
         <div class="h-px w-20 sm:w-40 md:w-56 bg-[#354D24] opacity-40"></div>
       </div>
     </div>

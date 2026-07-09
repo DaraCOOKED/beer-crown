@@ -2,43 +2,44 @@
   <div class="bg-[#F7EBD5] ">
 
     <!-- Header -->
-    <div class="max-w-3xl mx-auto px-4 pt-9 md:pt-20  lg:pt-24 pb-8 md:pb-14 text-center">
+    <div class="max-w-3xl mx-auto px-4 pt-9 md:pt-10 lg:pt-12 pb-8 text-center">
       <p
         class="text-xs md:text-sm font-semibold tracking-[0.25em] text-gray-500 uppercase mb-3
-               transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
+               transition-all duration-700 ease-out"
         :class="loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'"
       >
         Cambodia Craft Beer Crown 2026
       </p>
       <h1
-        class="text-4xl md:text-6xl lg:text-7xl text-[#354D24] font-bold uppercase
-               transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] delay-150"
+        class="text-3xl md:text-5xl text-center item-center text-[#354D24] font-bold uppercase
+               transition-all duration-700 ease-out delay-150"
         :class="loaded ? 'opacity-100 translate-y-0 blur-0' : 'opacity-0 translate-y-4 blur-sm'"
         style="font-family: 'Bebas Neue', sans-serif;"
       >
         Our Sponsors
       </h1>
       <div
-        class="flex items-center justify-center gap-4 mt-3 md:mt-5 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] delay-300"
+        class="flex items-center justify-center gap-4 mt-3  md:mt-5 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] delay-300"
         :class="loaded ? 'opacity-100 scale-100' : 'opacity-0 scale-95'"
       >
-        <div class="h-px w-20 sm:w-40 md:w-56 bg-[#354D24] opacity-40"></div>
-        <img
-          src="/linelogo.png"
-          alt="Logo"
-          class="w-10 h-10 sm:w-12 sm:h-12 md:w-9 md:h-9 object-contain transition-transform duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
+         <div class="h-px w-20 sm:w-40 md:w-56 bg-[#354D24] opacity-40"></div>
+        <div
+          role="img"
+          aria-label="Logo"
+          class="w-10 h-10 sm:w-7 sm:h-7 md:w-9 md:h-9 bg-[#354E20] transition-transform duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
           :class="loaded ? 'rotate-0 scale-100' : '-rotate-90 scale-50'"
-        />
+          style="-webkit-mask-image:url('/linelogo.png'); mask-image:url('/linelogo.png'); -webkit-mask-size:contain; mask-size:contain; -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat; -webkit-mask-position:center; mask-position:center;"
+        ></div>
         <div class="h-px w-20 sm:w-40 md:w-56 bg-[#354D24] opacity-40"></div>
       </div>
       <p
-        class="mt-4 text-[#354E20]/70 text-sm md:text-base max-w-md md:max-w-xl mx-auto font-medium
+        class="mt-3 text-[#354E20]/70 text-sm md:text-base max-w-md md:max-w-xl mx-auto font-medium
                transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] delay-[450ms]"
         :class="loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'"
       >
         Honoring the brands and partners who help make Beer Crown 2026 possible.
       </p>
-    </div>
+    </div>  
 
     <!-- Sponsors -->
     <div class="bg-[#F8EBD6]">
@@ -127,7 +128,7 @@ const tiers = ref([
   },
   {
     title: 'Venue Sponsor',
-    variant: 'gold',
+    variant: 'venue',
     sponsors: [
       { name: 'Botanico Craft Beer Garden', logo: '/sponsors/vanue-1.jpg' },
     ]

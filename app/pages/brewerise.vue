@@ -3,11 +3,40 @@
 
     <!-- Header: page-load fade-up -->
     <div
-      class="transition-all duration-700 ease-out"
+      class="transition-all item-center justify-center duration-700 ease-out"
       :class="loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'"
     >
-      <SectionHeader>Participants</SectionHeader>
+     <p
+        class="text-xs md:text-sm font-semibold text-center mt-4 justify-center tracking-[0.25em] text-gray-500 uppercase mb-3
+               transition-all duration-700 ease-out"
+        :class="loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'"
+      >
+        Cambodia Craft Beer Crown 2026
+      </p>
+     <h1
+        class="text-3xl md:text-5xl text-center item-center text-[#354D24] font-bold uppercase
+               transition-all duration-700 ease-out delay-150"
+        :class="loaded ? 'opacity-100 translate-y-0 blur-0' : 'opacity-0 translate-y-4 blur-sm'"
+        style="font-family: 'Bebas Neue', sans-serif;"
+      >
+        Event Schedule
+      </h1>
     </div>
+      <div
+        class="flex items-center justify-center gap-4 mb-4 mt-4 md:mt-5 transition-all duration-700 ease-out delay-300"
+        :class="loaded ? 'opacity-100 scale-100' : 'opacity-0 scale-95'"
+      >
+        <div class="h-px w-20 sm:w-40 md:w-56 bg-[#354D24] opacity-40"></div>
+        <div
+          role="img"
+          aria-label="Logo"
+          class="w-10 h-10 sm:w-7 sm:h-7 md:w-9 md:h-9 bg-[#354E20] transition-transform duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
+          :class="loaded ? 'rotate-0 scale-100' : '-rotate-90 scale-50'"
+          style="-webkit-mask-image:url('/linelogo.png'); mask-image:url('/linelogo.png'); -webkit-mask-size:contain; mask-size:contain; -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat; -webkit-mask-position:center; mask-position:center;"
+        ></div>
+        <div class="h-px w-20 sm:w-40 md:w-56 bg-[#354D24] opacity-40"></div>
+      </div>
+    
 
     <!-- Grid section: scoped overflow-hidden ONLY here, so it can never clip
          a sticky/fixed element that might live inside SectionHeader/SiteFooter -->
@@ -63,6 +92,8 @@
             name="Botanico Brewing Company"
             description="Located in the heart of Phnom Penh, Botanico is one of the oldest craft breweries in the country, creating a big range of different beers, often using locally grown ingredients. The moto is: Real Cambodian Craft Beer!"
             logo="/newbotanico2.png"
+            logo-class="w-40 h-30 sm:w-50 sm:h-24"
+            modal-logo-class="w-56 h-39"
             facebook="https://www.facebook.com/botanicobrewingco"
           />
         </div>
@@ -177,6 +208,8 @@
             name="Himawari Microbrewery"
             description="Himawari Microbrewery is the 1st and only microbrewery launched by it’s 5-star hotel-apartments in Cambodia. Made from the finest malt and hops, the beers crafted here are unique in flavour and of the highest quality"
             logo="/himavari.jpg"
+            logo-class="w-40 h-24 sm:w-44 sm:h-28"
+            modal-logo-class="w-56 h-36"
             facebook="https://www.facebook.com/HimawariHotelMicrobrewery"
           />
         </div>

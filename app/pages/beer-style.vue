@@ -1,27 +1,37 @@
 <template>
   <section class="bg-[#F7EBD5] min-h-screen overflow-x-hidden " ref="sectionRef">
-    <div class="w-full max-w-md md:max-w-2xl lg:max-w-4xl mx-auto px-4 sm:px-6 md:px-8 py-8 md:py-12">
+    <div class="w-full max-w-md md:max-w-2xl lg:max-w-4xl mx-auto px-3 sm:px-6 md:px-8 py-2 md:py-7">
 
       <!-- Title -->
       <div class="text-center">
+           <p
+        class="text-xs md:text-sm font-semibold tracking-[0.25em] text-gray-500 uppercase mb-3
+               transition-all duration-700 ease-out"
+        :class="loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'"
+      >
+        Cambodia Craft Beer Crown 2026
+      </p>
         <h1
-           class="text-[50px] md:text-[64px] lg:text-[76px] leading-[1.05] text-[#354D24] transition-all duration-700 ease-out"
+           class="text-3xl md:text-5xl text-center item-center text-[#354D24] font-bold uppercase
+               transition-all duration-700 ease-out delay-150"
           :class="loaded ? 'opacity-100 translate-y-0 blur-0' : 'opacity-0 translate-y-6 blur-sm'"
           style="font-family: 'Bebas Neue', sans-serif;"
         >
           BEER STYLE
         </h1>
+        
         <div
         class="flex items-center justify-center gap-4 mt-3 md:mt-5 transition-all duration-700 ease-out delay-300"
         :class="loaded ? 'opacity-100 scale-100' : 'opacity-0 scale-95'"
       >
         <div class="h-px w-20 sm:w-40 md:w-56 bg-[#354D24] opacity-40"></div>
-        <img
-          src="/linelogo.png"
-          alt="Logo"
-          class="w-10 h-10 sm:w-12 sm:h-7 md:w-9 md:h-9 object-contain transition-transform duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
+        <div
+          role="img"
+          aria-label="Logo"
+          class="w-10 h-10 sm:w-7 sm:h-7 md:w-9 md:h-9 bg-[#354E20] transition-transform duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
           :class="loaded ? 'rotate-0 scale-100' : '-rotate-90 scale-50'"
-        />
+          style="-webkit-mask-image:url('/linelogo.png'); mask-image:url('/linelogo.png'); -webkit-mask-size:contain; mask-size:contain; -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat; -webkit-mask-position:center; mask-position:center;"
+        ></div>
         <div class="h-px w-20 sm:w-40 md:w-56 bg-[#354D24] opacity-40"></div>
       </div>
       </div>
@@ -34,7 +44,7 @@
         :class="loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'"
       >
         <div class="relative z-10">
-          <h2 class="text-[22px] md:text-[16px] text-[#3F5A38]  tracking-tight"
+          <h2 class="text-[50px] md:text-[25px] text-[#3F5A38]  "
           style="font-family: 'Bebas Neue', sans-serif;">
             2026 THEME
           </h2>
@@ -62,7 +72,7 @@
                transition-all duration-700 ease-out delay-300"
         :class="loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'"
       >
-        <h2 class=" text-2xl md:text-2xl text-[#3F5A38] mb-3 md:mb-4"
+        <h2 class=" text-2xl md:text-[24px] text-[#3F5A38] mb-3 md:mb-4"
         style="font-family: 'Bebas Neue', sans-serif;">
           ABOUT THE COMPETITION
         </h2>
@@ -81,7 +91,7 @@
                transition-all duration-700 ease-out delay-[400ms]"
         :class="loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'"
       >
-        <legend class="ml-4 md:ml-6 px-3 text-xl md:text-sm text-[#3F5A38] tracking-wide bg-[#F7EBD5] "
+        <legend class="ml-4 md:ml-6 px-3 text-2xl md:text-[24px] text-[#3F5A38]  bg-[#F7EBD5] "
         style="font-family: 'Bebas Neue', sans-serif;">
           ALLOWED STYLE
         </legend>

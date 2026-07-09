@@ -10,7 +10,10 @@
     >
       <div class="bg-white rounded-2xl p-6 max-w-sm w-full shadow-xl modal-box">
         <div class="flex flex-col items-center text-center">
-          <div class="w-28 h-28 flex items-center justify-center mb-4 overflow-hidden">
+          <div
+            class="flex items-center justify-center mb-4 overflow-hidden"
+            :class="modalLogoClass"
+          >
             <img :src="logo" :alt="name" class="w-full h-full object-contain" />
           </div>
           <h3 class="text-lg font-bold uppercase text-[#354D24] tracking-wide mb-3">{{ name }}</h3>
@@ -38,7 +41,10 @@
     class="bg-white border border-[#354D24] rounded-2xl p-5 flex flex-col items-center text-center shadow-sm cursor-pointer transition-all duration-300 ease-out hover:shadow-[0_8px_24px_rgba(53,77,36,0.18)] hover:-translate-y-1"
     @click="showModal = true"
   >
-    <div class="w-24 h-24 flex items-center justify-center mb-4 overflow-hidden">
+    <div
+      class="flex items-center justify-center mb-4 overflow-hidden"
+      :class="logoClass"
+    >
       <img :src="logo" :alt="name" class="w-full h-full object-contain" />
     </div>
     <h3 class="text-sm font-bold uppercase text-[#354D24] tracking-wide">{{ name }}</h3>
@@ -61,6 +67,8 @@ defineProps({
   name: String,
   description: String,
   logo: String,
+  logoClass: { type: String, default: 'w-24 h-24' },
+  modalLogoClass: { type: String, default: 'w-28 h-28' },
   facebook: { type: String, default: '#' }
 })
 
