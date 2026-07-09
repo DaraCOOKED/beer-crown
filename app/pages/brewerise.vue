@@ -208,7 +208,7 @@
             name="Himawari Microbrewery"
             description="Himawari Microbrewery is the 1st and only microbrewery launched by it’s 5-star hotel-apartments in Cambodia. Made from the finest malt and hops, the beers crafted here are unique in flavour and of the highest quality"
             logo="/himavari.jpg"
-            logo-class="w-40 h-24 sm:w-44 sm:h-28"
+            logo-class="w-40 h-24 sm:w-44 sm:h-24"
             modal-logo-class="w-56 h-36"
             facebook="https://www.facebook.com/HimawariHotelMicrobrewery"
           />
