@@ -177,7 +177,7 @@
                  transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-0"
           :class="rulesVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-6 scale-75'"
         >
-          <svg width="50" height="30" viewBox="0 0 40 28" fill="none" stroke="#2F4A2F" stroke-width="1.6" class="md:w-12 md:h-9">
+          <svg width="50" height="30" viewBox="0 0 40 28" fill="none" stroke="#2F4A2F" stroke-width="1.6" class="md:w-15 md:h-11">
             <path d="M1 14C7 4 33 4 39 14C33 24 7 24 1 14Z" stroke-linejoin="round"/>
             <circle cx="20" cy="14" r="5"/>
           </svg>

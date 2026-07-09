@@ -37,8 +37,7 @@
                transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] delay-[450ms]"
         :class="loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'"
       >
-        Honoring the brands and partners who help make Beer Crown 2026 possible.
-      </p>
+We thank our generous sponsors who make the Cambodian Craft Beer Crown 2025 possible.      </p>
     </div>  
 
     <!-- Sponsors -->
