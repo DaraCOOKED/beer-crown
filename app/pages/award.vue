@@ -80,7 +80,7 @@ Three prestigious categories await our winners
                 </svg>
               </div>
 
-              <h3 class="text-[#354E20] font-black text-xl mb-2 tracking-wide">GRAND AWARDS</h3>
+              <h3 class="text-[#354E20] font-black text-lg sm:text-xl md:text-2xl mb-2">GRAND AWARDS</h3>
 
               <span class="inline-block bg-[#354E20]/10 text-black text-xs font-bold px-4 py-1 rounded-full mb-5">
                 Official Competition
@@ -152,7 +152,7 @@ Three prestigious categories await our winners
                 </svg>
               </div>
 
-              <h3 class="text-[#354E20] font-black text-xl mb-2 tracking-wide">PEOPLE'S CHOICE</h3>
+              <h3 class="text-[#354E20] font-black text-lg sm:text-xl md:text-2xl mb-2">PEOPLE'S CHOICE</h3>
 
               <span class="inline-block bg-[#354E20]/10 text-black text-xs font-bold px-4 py-1 rounded-full mb-5">
                 Festival Attendees
@@ -187,16 +187,16 @@ Three prestigious categories await our winners
                 </svg>
               </div>
 
-              <h3 class="text-[#354E20] font-black text-xl mb-2 tracking-wide">BREWER'S CHOICE AWARD</h3>
-
+<h3 class="text-[#354E20] font-black text-lg sm:text-xl md:text-2xl mb-2">
+  BREWER'S CHOICE AWARD
+</h3>
               <span class="inline-block bg-[#354E20]/10 text-black text-xs font-bold px-4 py-1 rounded-full mb-5">
                 Innovation & Style
               </span>
 
-              <p class="text-black/80 text-sm leading-relaxed mb-8 flex-grow">
-                Celebrating technical mastery and boundary-pushing ingredients. Awarded to brewers who show exceptional
-                creativity within their styles.
-              </p>
+<p class="text-black/80 text-sm leading-relaxed mb-8 flex-grow">
+  The brewers vote amongst themselves. Not to be taken too seriously.
+</p>
 
             </div>
           </div>
