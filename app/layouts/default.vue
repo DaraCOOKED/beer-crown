@@ -4,7 +4,7 @@
     <div class="flex items-center justify-between  px-4 py-1">
       <div class="flex justify-center item-center align-center" >
         <NuxtLink to="/" class="text-lg justify-center font-bold ">
-        <img src="/final-logo.png" class="h-13 mt-2.5 w-17" alt="Beer Crown 2026 logo">
+        <img src="/final-logo.png" class="h-13.5 mt-2 w-19" alt="Beer Crown 2026 logo">
       </NuxtLink>
       <NuxtLink to="/" class="text-lg justify-center font-bold flex justify-center tracking-wide">
         <img src="/beer-asso.png" class="h-18 w-1.8 flex" alt="Beer Crown 2026 logo">
@@ -127,7 +127,7 @@
         active-class="text-amber-600 underline underline-offset-4"
         @click="menuOpen = false"
         class="hover:text-amber-600"
-      >Award</NuxtLink>
+      >Awards</NuxtLink>
       
       <NuxtLink
         to="/sponsor"

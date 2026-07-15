@@ -187,7 +187,7 @@ Three prestigious categories await our winners
                 </svg>
               </div>
 
-              <h3 class="text-[#354E20] font-black text-xl mb-2 tracking-wide">EXCELLENCE AWARDS</h3>
+              <h3 class="text-[#354E20] font-black text-xl mb-2 tracking-wide">BREWER'S CHOICE AWARD</h3>
 
               <span class="inline-block bg-[#354E20]/10 text-black text-xs font-bold px-4 py-1 rounded-full mb-5">
                 Innovation & Style

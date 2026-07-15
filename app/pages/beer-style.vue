@@ -331,6 +331,19 @@ const styles = [
     temp: '7–9 °C',
     colorLabel: 'Deep dark brown',
   },
+  {
+    name: 'British Golden Ale',
+    origin: 'England',
+    flag: '🇬🇧',
+    alcohol: '3.8% - 5%',
+    ibu: '20 - 45',
+    image: '/golden-ale.png',
+    description: 'A hop-forward, average-strength to moderately-strong pale bitter. Drinkability and a refreshing quality are critical components of the style.',
+    flavors: 'BCitrus · Crisp · Bready malt',
+    pairing: 'Fish & chips · Grilled chicken · Mild cheeses',
+    temp: '10-13°C',
+    colorLabel: 'Pale straw to deep gold',
+  },
 ]
 
 // --- Expand/collapse state ---
